@@ -1,2 +1,2 @@
 # EssentialAlgo
-Library with all essential algorithms.
+Project in progress.
