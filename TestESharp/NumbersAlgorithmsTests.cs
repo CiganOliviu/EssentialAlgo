@@ -59,5 +59,14 @@ namespace TestESharp
             Assert.IsTrue(_numbersAlgorithms.ReverseNumber(1369895) == 5989631);
             Assert.IsTrue(_numbersAlgorithms.ReverseNumber(333) == 333);
         }
+        
+        [Test]
+        public void Test_GetPalindromeNumber_()
+        {
+            Assert.IsTrue(_numbersAlgorithms.GetPalindromeNumber(121) == 121);
+            Assert.IsTrue(_numbersAlgorithms.GetPalindromeNumber(25) == 0);
+            Assert.IsTrue(_numbersAlgorithms.GetPalindromeNumber(1369895) == 0);
+            Assert.IsTrue(_numbersAlgorithms.GetPalindromeNumber(333) == 333);
+        }
     }
 }

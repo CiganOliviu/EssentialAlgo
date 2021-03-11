@@ -65,7 +65,7 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 
         public int GetPalindromeNumber(int factor)
         {
-            throw new System.NotImplementedException();
+            return ReverseNumber(factor) == factor ? factor : 0;
         }
 
         public float GetMeanOfTwoNumbers<T>(T firstNumber, T secondNumber)
