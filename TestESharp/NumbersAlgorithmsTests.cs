@@ -50,5 +50,14 @@ namespace TestESharp
             Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(13) == 13);
             Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(23) == 23);
         }
+        
+        [Test]
+        public void Test_ReverseNumber_()
+        {
+            Assert.IsTrue(_numbersAlgorithms.ReverseNumber(12) == 21);
+            Assert.IsTrue(_numbersAlgorithms.ReverseNumber(25) == 52);
+            Assert.IsTrue(_numbersAlgorithms.ReverseNumber(1369895) == 5989631);
+            Assert.IsTrue(_numbersAlgorithms.ReverseNumber(333) == 333);
+        }
     }
 }

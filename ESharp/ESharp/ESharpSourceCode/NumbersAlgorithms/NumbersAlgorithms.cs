@@ -52,7 +52,15 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 
         public int ReverseNumber(int number)
         {
-            throw new System.NotImplementedException();
+            var result = 0;
+
+            while (number != 0)
+            {
+                result = (result * 10) + number % 10;
+                number /= 10;
+            }
+
+            return result;
         }
 
         public int GetPalindromeNumber(int factor)
