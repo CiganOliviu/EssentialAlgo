@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.VisualBasic.CompilerServices;
 
 namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 {
@@ -70,7 +71,10 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 
         public float GetMeanOfTwoNumbers<T>(T firstNumber, T secondNumber)
         {
-            throw new System.NotImplementedException();
+            dynamic firstAsNumber = firstNumber;
+            dynamic secondAsNumber = secondNumber;
+
+            return (firstAsNumber + secondAsNumber) / 2;
         }
 
         public void InterchangeVariablesValues<T>(ref T firstVariable, ref T secondVariable)
