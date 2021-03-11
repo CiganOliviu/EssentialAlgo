@@ -77,5 +77,27 @@ namespace TestESharp
             Assert.IsTrue(Math.Abs(_numbersAlgorithms.GetMeanOfTwoNumbers(213123, 1369895) - 791509) < 3);
             Assert.IsTrue(Math.Abs(_numbersAlgorithms.GetMeanOfTwoNumbers(333, 2) - 167.5) < 3);
         }
+        
+        [Test]
+        public void Test_InterchangeVariablesValues_()
+        {
+            var firstVariable = 12;
+            var secondVariable = 13;
+            
+            _numbersAlgorithms.InterchangeVariablesValues(ref firstVariable, ref secondVariable);
+            Assert.IsTrue(firstVariable == 13 && secondVariable == 12);
+            
+            _numbersAlgorithms.InterchangeVariablesValues(ref firstVariable, ref secondVariable);
+            Assert.IsTrue(firstVariable == 12 && secondVariable == 13);
+
+            var firstDoubleVariable = 123.32;
+            var secondDoubleVariable = 345.32;
+            
+            _numbersAlgorithms.InterchangeVariablesValues(ref firstDoubleVariable, ref secondDoubleVariable);
+            Assert.IsTrue(Math.Abs(firstDoubleVariable - 345.32) < 2 && Math.Abs(secondDoubleVariable - 123.32) < 2);
+            
+            _numbersAlgorithms.InterchangeVariablesValues(ref firstDoubleVariable, ref secondDoubleVariable);
+            Assert.IsTrue(Math.Abs(firstDoubleVariable - 123.32) < 2 && Math.Abs(secondDoubleVariable - 345.32) < 2);
+        }
     }
 }

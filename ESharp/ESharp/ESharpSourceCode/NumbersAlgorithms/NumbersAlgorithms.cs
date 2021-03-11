@@ -79,7 +79,15 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 
         public void InterchangeVariablesValues<T>(ref T firstVariable, ref T secondVariable)
         {
-            throw new System.NotImplementedException();
+            dynamic firstAsVariable = firstVariable;
+            dynamic secondAsVariable = secondVariable;
+
+            firstAsVariable += secondAsVariable;
+            secondAsVariable = firstAsVariable - secondAsVariable;
+            firstAsVariable -= secondAsVariable;
+
+            firstVariable = firstAsVariable;
+            secondVariable = secondAsVariable;
         }
 
         public int GetDigitsSumOfNumber(int number)
