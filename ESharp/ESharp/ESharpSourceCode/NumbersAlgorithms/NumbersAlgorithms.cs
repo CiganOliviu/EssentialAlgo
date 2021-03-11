@@ -35,7 +35,7 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 
         public int GetTheLeastCommonMultiple(int inferiorLimit, int superiorLimit)
         {
-            throw new System.NotImplementedException();
+            return (inferiorLimit * superiorLimit) / GetTheLargestCommonDivisor(inferiorLimit, superiorLimit);
         }
 
         public int GetPrimeValue(int factor)
