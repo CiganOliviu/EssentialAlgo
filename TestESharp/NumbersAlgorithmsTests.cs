@@ -41,5 +41,14 @@ namespace TestESharp
             Assert.IsTrue(_numbersAlgorithms.GetTheLeastCommonMultiple(200, 324) == 16200);
             Assert.IsTrue(_numbersAlgorithms.GetTheLeastCommonMultiple(100, 50) == 100);
         }
+        
+        [Test]
+        public void Test_GetValueIfPrime_()
+        {
+            Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(12) == 0);
+            Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(25) == 0);
+            Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(13) == 13);
+            Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(23) == 23);
+        }
     }
 }

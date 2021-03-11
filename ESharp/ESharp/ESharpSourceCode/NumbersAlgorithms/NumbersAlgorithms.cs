@@ -38,9 +38,16 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
             return (inferiorLimit * superiorLimit) / GetTheLargestCommonDivisor(inferiorLimit, superiorLimit);
         }
 
-        public int GetPrimeValue(int factor)
+        public int GetValueIfPrime(int factor)
         {
-            throw new System.NotImplementedException();
+            if (factor == 2)
+                return factor;
+
+            for (var divisor = 2; divisor <= factor / 2; divisor++)
+                if (factor % divisor == 0)
+                    return 0;
+
+            return factor;
         }
 
         public int ReverseNumber(int number)
