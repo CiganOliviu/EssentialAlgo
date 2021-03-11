@@ -99,5 +99,14 @@ namespace TestESharp
             _numbersAlgorithms.InterchangeVariablesValues(ref firstDoubleVariable, ref secondDoubleVariable);
             Assert.IsTrue(Math.Abs(firstDoubleVariable - 123.32) < 2 && Math.Abs(secondDoubleVariable - 345.32) < 2);
         }
+        
+        [Test]
+        public void Test_GetDigitsSumOfNumber_()
+        {
+            Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(121) == 4);
+            Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(25) == 7);
+            Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(1369895) == 41);
+            Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(333) == 9);
+        }
     }
 }

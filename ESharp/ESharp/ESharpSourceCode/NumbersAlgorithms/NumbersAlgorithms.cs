@@ -92,7 +92,16 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 
         public int GetDigitsSumOfNumber(int number)
         {
-            throw new System.NotImplementedException();
+            var result = 0;
+            
+            while (number != 0)
+            {
+                var digit = number % 10;
+                result += digit;
+                number /= 10;
+            }
+
+            return result;
         }
 
         public int GetDigitsProductOfNumber(int number)
