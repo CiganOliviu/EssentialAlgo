@@ -10,5 +10,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d3b4fb33_002D3885_002D4cc0_002D9fc7_002D4b32820b5b1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test__" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::C694BF19-1EE5-4931-BD26-74246AF28F3A::.NETCoreApp,Version=v3.1::TestESharp.NumbersAlgorithmsTests.Test_GetTheLargestCommonDivisor_&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C694BF19-1EE5-4931-BD26-74246AF28F3A::.NETCoreApp,Version=v3.1::TestESharp.NumbersAlgorithmsTests.Test_GetTheLargestCommonDivisorRecursive_&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
