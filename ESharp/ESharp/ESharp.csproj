@@ -17,4 +17,8 @@
       <None Remove="SystemTests\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="ESharpSourceCode\NumbersAlgorithms" />
+    </ItemGroup>
+
 </Project>
