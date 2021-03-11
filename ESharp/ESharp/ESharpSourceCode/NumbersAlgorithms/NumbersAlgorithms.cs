@@ -106,7 +106,16 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 
         public int GetDigitsProductOfNumber(int number)
         {
-            throw new System.NotImplementedException();
+            var result = 1;
+            
+            while (number != 0)
+            {
+                var digit = number % 10;
+                result *= digit;
+                number /= 10;
+            }
+
+            return result;
         }
     }
 }

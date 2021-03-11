@@ -108,5 +108,14 @@ namespace TestESharp
             Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(1369895) == 41);
             Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(333) == 9);
         }
+        
+        [Test]
+        public void Test_GetDigitsProductOfNumber_()
+        {
+            Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(121) == 2);
+            Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(25) == 10);
+            Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(1369895) == 58320);
+            Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(333) == 27);
+        }
     }
 }
