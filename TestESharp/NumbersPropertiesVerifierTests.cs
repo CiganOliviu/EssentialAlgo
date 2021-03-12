@@ -1,6 +1,4 @@
-﻿using System;
-using ESharp.ESharpSourceCode.NumbersAlgorithms;
-using ESharp.ESharpSourceCode.NumbersPropertiesVerifier;
+﻿using ESharp.ESharpSourceCode.NumbersPropertiesVerifier;
 using NUnit.Framework;
 
 namespace TestESharp
@@ -53,6 +51,16 @@ namespace TestESharp
             Assert.IsFalse(_numbersPropertiesVerifier.IsPalindrome(1234));
             Assert.IsTrue(_numbersPropertiesVerifier.IsPalindrome(1));
             Assert.IsTrue(_numbersPropertiesVerifier.IsPalindrome(99));
+        }
+        
+        [Test]
+        public void Test_IsPerfectSquare_()
+        {
+            Assert.IsTrue(_numbersPropertiesVerifier.IsPerfectSquare(144));
+            Assert.IsFalse(_numbersPropertiesVerifier.IsPerfectSquare(123));
+            Assert.IsTrue(_numbersPropertiesVerifier.IsPerfectSquare(169));
+            Assert.IsTrue(_numbersPropertiesVerifier.IsPerfectSquare(4));
+            
         }
     }
 }

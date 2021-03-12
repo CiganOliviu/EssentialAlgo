@@ -1,4 +1,6 @@
-﻿namespace ESharp.ESharpSourceCode.NumbersPropertiesVerifier
+﻿using System;
+
+namespace ESharp.ESharpSourceCode.NumbersPropertiesVerifier
 {
     public class NumbersPropertiesVerifier: IAbstractNumbersPropertiesVerifier
     {
@@ -44,7 +46,7 @@
 
         public bool IsPerfectSquare(int number)
         {
-            throw new System.NotImplementedException();
+            return Math.Sqrt(number) % 1 == 0;
         }
 
         public bool IsFibonacci(int number)
@@ -52,7 +54,7 @@
             throw new System.NotImplementedException();
         }
 
-        public bool IsFactorialResult(int number)
+        public bool ISFactorial(int number)
         {
             throw new System.NotImplementedException();
         }
