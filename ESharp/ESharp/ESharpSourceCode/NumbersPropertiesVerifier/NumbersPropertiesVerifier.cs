@@ -15,7 +15,7 @@
 
         public bool IsOdd(int number)
         {
-            throw new System.NotImplementedException();
+            return number % 2 == 1;
         }
 
         public bool IsEven(int number)

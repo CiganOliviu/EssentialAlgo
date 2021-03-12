@@ -24,5 +24,15 @@ namespace TestESharp
             Assert.IsFalse(_numbersPropertiesVerifier.IsPrime(6));
             Assert.IsFalse(_numbersPropertiesVerifier.IsPrime(21));
         }
+        
+        [Test]
+        public void Test_IsOdd_()
+        {
+            Assert.IsTrue(_numbersPropertiesVerifier.IsOdd(13));
+            Assert.IsTrue(_numbersPropertiesVerifier.IsOdd(17));
+            Assert.IsFalse(_numbersPropertiesVerifier.IsOdd(22));
+            Assert.IsFalse(_numbersPropertiesVerifier.IsOdd(2));
+            Assert.IsTrue(_numbersPropertiesVerifier.IsOdd(3));
+        }
     }
 }
