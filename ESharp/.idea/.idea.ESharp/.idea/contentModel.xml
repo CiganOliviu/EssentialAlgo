@@ -39,6 +39,11 @@
             <e p="NumbersAlgorithms.cs" t="Include" />
             <e p="NumbersAlgorithmsFactoryObject.cs" t="Include" />
           </e>
+          <e p="NumbersPropertiesVerifier" t="Include">
+            <e p="IAbstractNumbersPropertiesVerifier.cs" t="Include" />
+            <e p="NumbersPropertiesVerifier.cs" t="Include" />
+            <e p="NumbersPropertiesVerifierFactoryObject.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -57,6 +62,7 @@
       <e p="DataStructuresTests.cs" t="Include" />
       <e p="FundamentalAlgorithmsTests.cs" t="Include" />
       <e p="NumbersAlgorithmsTests.cs" t="Include" />
+      <e p="NumbersPropertiesVerifierTests.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">

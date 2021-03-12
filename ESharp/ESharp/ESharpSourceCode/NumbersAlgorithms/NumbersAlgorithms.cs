@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.VisualBasic.CompilerServices;
-
-namespace ESharp.ESharpSourceCode.NumbersAlgorithms
+﻿namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 {
     public class NumbersAlgorithms : IAbstractNumbersAlgorithms
     {

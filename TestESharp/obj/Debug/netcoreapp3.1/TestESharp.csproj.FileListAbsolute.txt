@@ -196,3 +196,6 @@ D:\ciganenterprise_git\EssentialAlgo\TestESharp\obj\Debug\netcoreapp3.1\TestESha
 D:\ciganenterprise_git\EssentialAlgo\TestESharp\obj\Debug\netcoreapp3.1\TestESharp.dll
 D:\ciganenterprise_git\EssentialAlgo\TestESharp\obj\Debug\netcoreapp3.1\TestESharp.pdb
 D:\ciganenterprise_git\EssentialAlgo\TestESharp\obj\Debug\netcoreapp3.1\TestESharp.genruntimeconfig.cache
+D:\ciganenterprise_git\EssentialAlgo\TestESharp\bin\Debug\netcoreapp3.1\ESharp.deps.json
+D:\ciganenterprise_git\EssentialAlgo\TestESharp\bin\Debug\netcoreapp3.1\ESharp.runtimeconfig.json
+D:\ciganenterprise_git\EssentialAlgo\TestESharp\bin\Debug\netcoreapp3.1\ESharp.runtimeconfig.dev.json

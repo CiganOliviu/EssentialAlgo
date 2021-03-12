@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "3wXeo45F5Hmp50EkYGXOZWdiw1SKvgrVU5fh7aa1JVgTRJwu2IIapm1Atut1QsRUcRUN/Hga2cdIPIw2imNuOg==",
+  "dgSpecHash": "T+9dkv9BWtUQkoxX0zasLvceAp6byTGMxe9m4rj2/8s6rke8u8uFCgCDuntHtXhLam+jbnSS4ub1PIQ0mmUybw==",
   "success": true,
   "projectFilePath": "D:\\ciganenterprise_git\\EssentialAlgo\\ESharp\\ESharp\\ESharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cigan\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
     "C:\\Users\\cigan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
     "C:\\Users\\cigan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\cigan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+    "C:\\Users\\cigan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
   ],
   "logs": []
 }
