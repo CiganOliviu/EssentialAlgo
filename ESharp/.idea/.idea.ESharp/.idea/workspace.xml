@@ -23,42 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336778e3-1647-4667-a72c-7b0f1c14a832" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersPropertiesVerifier/IAbstractNumbersPropertiesVerifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersPropertiesVerifier/NumbersPropertiesVerifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersPropertiesVerifier/NumbersPropertiesVerifierFactoryObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestESharp/NumbersPropertiesVerifierTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersAlgorithms/NumbersAlgorithms.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersAlgorithms/NumbersAlgorithms.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersPropertiesVerifier/NumbersPropertiesVerifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersPropertiesVerifier/NumbersPropertiesVerifier.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ESharp/bin/Debug/netcoreapp3.1/ESharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/bin/Debug/netcoreapp3.1/ESharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/bin/Debug/netcoreapp3.1/ESharp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/bin/Debug/netcoreapp3.1/ESharp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ESharp/bin/Debug/netcoreapp3.1/ESharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/bin/Debug/netcoreapp3.1/ESharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/ESharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/ESharp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/ESharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/ESharp.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/ESharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/ESharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/ESharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/ESharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/Debug/netcoreapp3.1/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/obj/ESharp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/ESharp.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ESharp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestESharp/NumbersPropertiesVerifierTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/NumbersPropertiesVerifierTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/ESharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/ESharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/ESharp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/ESharp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/ESharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/ESharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/TestESharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/TestESharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/TestESharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/bin/Debug/netcoreapp3.1/TestESharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestESharp/obj/TestESharp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/TestESharp.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestESharp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestESharp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestESharp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestESharp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +117,7 @@
       <workItem from="1615574596707" duration="119000" />
       <workItem from="1615574766521" duration="299000" />
       <workItem from="1615575365935" duration="336000" />
-      <workItem from="1615575756334" duration="1736000" />
+      <workItem from="1615575756334" duration="3405000" />
     </task>
     <servers />
   </component>

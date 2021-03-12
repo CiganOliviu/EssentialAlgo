@@ -20,12 +20,26 @@
 
         public bool IsEven(int number)
         {
-            throw new System.NotImplementedException();
+            return number % 2 == 0;
         }
 
+        private int ReverseNumber(int number)
+        {
+            var result = 0;
+
+            while (number != 0)
+            {
+                var digit = number % 10;
+                result = ( result * 10 ) + digit; 
+                number /= 10;
+            }
+
+            return result;
+        }
+        
         public bool IsPalindrome(int number)
         {
-            throw new System.NotImplementedException();
+            return ReverseNumber(number) == number;
         }
 
         public bool IsPerfectSquare(int number)
