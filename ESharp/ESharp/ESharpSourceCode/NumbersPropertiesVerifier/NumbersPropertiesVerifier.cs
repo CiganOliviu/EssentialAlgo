@@ -58,7 +58,6 @@ namespace ESharp.ESharpSourceCode.NumbersPropertiesVerifier
         }
         public bool IsFibonacci(int number)
         {
-
             for (var it = 1; it < number; it++)
                 if (GetFibonacciNumber(it) == number)
                     return true;
@@ -76,7 +75,11 @@ namespace ESharp.ESharpSourceCode.NumbersPropertiesVerifier
         
         public bool IsFactorial(int number)
         {
-            throw new System.NotImplementedException();
+            for (var it = 1; it < number; it++)
+                if (GetFactorialNumber(it) == number)
+                    return true;
+
+            return false;
         }
     }
 }

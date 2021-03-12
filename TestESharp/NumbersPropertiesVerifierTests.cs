@@ -71,5 +71,14 @@ namespace TestESharp
             Assert.IsTrue(_numbersPropertiesVerifier.IsFibonacci(55));
             Assert.IsFalse(_numbersPropertiesVerifier.IsFibonacci(4));
         }
+        
+        [Test]
+        public void Test_IsFactorial_()
+        {
+            Assert.IsTrue(_numbersPropertiesVerifier.IsFactorial(120));
+            Assert.IsTrue(_numbersPropertiesVerifier.IsFactorial(24));
+            Assert.IsTrue(_numbersPropertiesVerifier.IsFactorial(5040));
+            Assert.IsFalse(_numbersPropertiesVerifier.IsFactorial(7));
+        }
     }
 }
