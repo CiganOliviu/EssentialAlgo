@@ -4,9 +4,19 @@
     &lt;TestId&gt;NUnit3x::C694BF19-1EE5-4931-BD26-74246AF28F3A::.NETCoreApp,Version=v3.1::TestESharp.FundamentalAlgorithmsTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41548d92_002Dfa99_002D4473_002D9428_002D95846769921c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;TestESharp&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=41548d92_002Dfa99_002D4473_002D9428_002D95846769921c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;TestESharp&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="D:\ciganenterprise_git\EssentialAlgo\TestESharp" Presentation="&amp;lt;TestESharp&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d3b4fb33_002D3885_002D4cc0_002D9fc7_002D4b32820b5b1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test__" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=99099601_002D2755_002D46bd_002Da839_002D8b65b17ab7f0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_IsFibonacci_ #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C694BF19-1EE5-4931-BD26-74246AF28F3A::.NETCoreApp,Version=v3.1::TestESharp.NumbersPropertiesVerifierTests.Test_IsFibonacci_&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c5e7640b_002D340d_002D47ec_002D9d05_002D3fa440ff0a64/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test_IsFibonacci_" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C694BF19-1EE5-4931-BD26-74246AF28F3A::.NETCoreApp,Version=v3.1::TestESharp.NumbersPropertiesVerifierTests.Test_IsFibonacci_&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d3b4fb33_002D3885_002D4cc0_002D9fc7_002D4b32820b5b1d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test__" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="D:\ciganenterprise_git\EssentialAlgo\TestESharp" Presentation="&amp;lt;TestESharp&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

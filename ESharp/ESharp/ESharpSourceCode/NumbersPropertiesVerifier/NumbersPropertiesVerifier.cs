@@ -49,12 +49,32 @@ namespace ESharp.ESharpSourceCode.NumbersPropertiesVerifier
             return Math.Sqrt(number) % 1 == 0;
         }
 
+        private int GetFibonacciNumber(int number)
+        {
+            if (number == 1 || number == 2)
+                return 1;
+
+            return GetFibonacciNumber(number - 1) + GetFibonacciNumber(number - 2);
+        }
         public bool IsFibonacci(int number)
         {
-            throw new System.NotImplementedException();
+
+            for (var it = 1; it < number; it++)
+                if (GetFibonacciNumber(it) == number)
+                    return true;
+
+            return false;
         }
 
-        public bool ISFactorial(int number)
+        private int GetFactorialNumber(int number)
+        {
+            if (number == 0 || number == 1)
+                return 1;
+
+            return number * GetFactorialNumber(number - 1);
+        }
+        
+        public bool IsFactorial(int number)
         {
             throw new System.NotImplementedException();
         }

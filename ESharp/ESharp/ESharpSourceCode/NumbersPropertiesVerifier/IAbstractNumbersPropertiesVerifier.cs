@@ -8,6 +8,6 @@
         bool IsPalindrome(int number);
         bool IsPerfectSquare(int number);
         bool IsFibonacci(int number);
-        bool ISFactorial(int number);
+        bool IsFactorial(int number);
     }
 }

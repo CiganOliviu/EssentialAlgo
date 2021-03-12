@@ -62,5 +62,14 @@ namespace TestESharp
             Assert.IsTrue(_numbersPropertiesVerifier.IsPerfectSquare(4));
             
         }
+        
+        [Test]
+        public void Test_IsFibonacci_()
+        {
+            Assert.IsTrue(_numbersPropertiesVerifier.IsFibonacci(144));
+            Assert.IsTrue(_numbersPropertiesVerifier.IsFibonacci(34));
+            Assert.IsTrue(_numbersPropertiesVerifier.IsFibonacci(55));
+            Assert.IsFalse(_numbersPropertiesVerifier.IsFibonacci(4));
+        }
     }
 }
