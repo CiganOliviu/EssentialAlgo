@@ -1,53 +1,55 @@
-﻿namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
+﻿using ESharp.DataStructures.OneDimensionalArray;
+
+namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 {
     public class OneDimensionalArraysWorkflow : IAbstractOneDimensionalArraysWorkflow
     {
-        public T GetMinimumValueFromArray<T>(T[] array)
+        public int GetMinimumValueFromArray(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public T GetMaximumValueFromArray<T>(T[] array)
+        public int GetMaximumValueFromArray(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public T GetArrayElementsSum<T>(T[] array)
+        public int GetArrayElementsSum(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public T GetArrayElementsProduct<T>(T[] array)
+        public int GetArrayElementsProduct(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public T GetArrayElementsDifference<T>(T[] array)
+        public int GetArrayElementsDifference(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public T GetArrayElementsDivision<T>(T[] array)
+        public int GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public T GetArrayElementsMean<T>(T[] array)
+        public int GetArrayElementsMean(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public bool IsArraySymmetric<T>(T[] array)
+        public bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public T AddValueInArray<T>(T[] array)
+        public int AddValueInArray(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
 
-        public bool IsValueInArray<T>(T[] array, T value)
+        public bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value)
         {
             throw new System.NotImplementedException();
         }
@@ -62,37 +64,46 @@
             throw new System.NotImplementedException();
         }
 
-        public T BoostUpArray<T>(T[] array, T booster)
+        public int BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster)
         {
             throw new System.NotImplementedException();
         }
 
-        public T BoostDownArray<T>(T[] array, T booster)
+        public int BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster)
         {
             throw new System.NotImplementedException();
         }
 
-        public T[] GetArraysSum<T>(T[] arrayOne, T[] arrayTwo)
+        public IAbstractOneDimensionalArrayObject GetArraysSum(IAbstractOneDimensionalArrayObject arrayOne,
+            IAbstractOneDimensionalArrayObject arrayTwo)
         {
             throw new System.NotImplementedException();
         }
 
-        public T[] GetArraysProduct<T>(T[] arrayOne, T[] arrayTwo)
+        public IAbstractOneDimensionalArrayObject GetArraysProduct(IAbstractOneDimensionalArrayObject arrayOne,
+            IAbstractOneDimensionalArrayObject arrayTwo)
         {
             throw new System.NotImplementedException();
         }
 
-        public T[] GetArraysDifference<T>(T[] arrayOne, T[] arrayTwo)
+        public IAbstractOneDimensionalArrayObject GetArraysDifference(IAbstractOneDimensionalArrayObject arrayOne,
+            IAbstractOneDimensionalArrayObject arrayTwo)
         {
             throw new System.NotImplementedException();
         }
 
-        public T[] GetArraysDivision<T>(T[] arrayOne, T[] arrayTwo)
+        public IAbstractOneDimensionalArrayObject GetArraysDivision(IAbstractOneDimensionalArrayObject arrayOne,
+            IAbstractOneDimensionalArrayObject arrayTwo)
         {
             throw new System.NotImplementedException();
         }
 
-        public bool AreArraysEqual<T>(T[] arrayOne, T[] arrayTwo)
+        public bool AreArraysEqual(IAbstractOneDimensionalArrayObject arrayOne, IAbstractOneDimensionalArrayObject arrayTwo)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SortArray(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }

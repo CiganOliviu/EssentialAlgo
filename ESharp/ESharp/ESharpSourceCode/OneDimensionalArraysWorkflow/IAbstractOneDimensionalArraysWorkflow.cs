@@ -1,25 +1,32 @@
-﻿namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
+﻿using ESharp.DataStructures.OneDimensionalArray;
+
+namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 {
     public interface IAbstractOneDimensionalArraysWorkflow
     {
-        T GetMinimumValueFromArray<T>(T[] array);
-        T GetMaximumValueFromArray<T>(T[] array);
-        T GetArrayElementsSum<T>(T[] array);
-        T GetArrayElementsProduct<T>(T[] array);
-        T GetArrayElementsDifference<T>(T[] array);
-        T GetArrayElementsDivision<T>(T[] array);
-        T GetArrayElementsMean<T>(T[] array);
-        bool IsArraySymmetric<T>(T[] array);
-        T AddValueInArray<T>(T[] array);
-        bool IsValueInArray<T>(T[] array, T value);
+        int GetMinimumValueFromArray(IAbstractOneDimensionalArrayObject array);
+        int GetMaximumValueFromArray(IAbstractOneDimensionalArrayObject array);
+        int GetArrayElementsSum(IAbstractOneDimensionalArrayObject array);
+        int GetArrayElementsProduct(IAbstractOneDimensionalArrayObject array);
+        int GetArrayElementsDifference(IAbstractOneDimensionalArrayObject array);
+        int GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array);
+        int GetArrayElementsMean(IAbstractOneDimensionalArrayObject array);
+        bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array);
+        int AddValueInArray(IAbstractOneDimensionalArrayObject array);
+        bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value);
         int[] ConvertNumberToArray(int number);
         int ConvertArrayToNumber(int[] array);
-        T BoostUpArray<T>(T[] array, T booster);
-        T BoostDownArray<T>(T[] array, T booster);
-        T[] GetArraysSum<T>(T[] arrayOne, T[] arrayTwo);
-        T[] GetArraysProduct<T>(T[] arrayOne, T[] arrayTwo);
-        T[] GetArraysDifference<T>(T[] arrayOne, T[] arrayTwo);
-        T[] GetArraysDivision<T>(T[] arrayOne, T[] arrayTwo);
-        bool AreArraysEqual<T>(T[] arrayOne, T[] arrayTwo);
+        int BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster);
+        int BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster);
+        IAbstractOneDimensionalArrayObject GetArraysSum(IAbstractOneDimensionalArrayObject arrayOne,
+                                                        IAbstractOneDimensionalArrayObject arrayTwo);
+        IAbstractOneDimensionalArrayObject GetArraysProduct(IAbstractOneDimensionalArrayObject arrayOne,
+                                                            IAbstractOneDimensionalArrayObject arrayTwo);
+        IAbstractOneDimensionalArrayObject GetArraysDifference(IAbstractOneDimensionalArrayObject arrayOne, 
+                                                                IAbstractOneDimensionalArrayObject arrayTwo);
+        IAbstractOneDimensionalArrayObject GetArraysDivision(IAbstractOneDimensionalArrayObject arrayOne,
+                                                            IAbstractOneDimensionalArrayObject arrayTwo);
+        bool AreArraysEqual(IAbstractOneDimensionalArrayObject arrayOne, IAbstractOneDimensionalArrayObject arrayTwo);
+        void SortArray(IAbstractOneDimensionalArrayObject array);
     }
 }
