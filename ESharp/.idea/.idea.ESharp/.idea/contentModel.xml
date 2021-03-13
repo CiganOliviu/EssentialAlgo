@@ -44,6 +44,11 @@
             <e p="NumbersPropertiesVerifier.cs" t="Include" />
             <e p="NumbersPropertiesVerifierFactoryObject.cs" t="Include" />
           </e>
+          <e p="OneDimensionalArraysWorkflow" t="Include">
+            <e p="IAbstractOneDimensionalArraysWorkflow.cs" t="Include" />
+            <e p="OneDimensionalArraysWorkflow.cs" t="Include" />
+            <e p="OneDimensionalArraysWorkflowFactoryObject.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
