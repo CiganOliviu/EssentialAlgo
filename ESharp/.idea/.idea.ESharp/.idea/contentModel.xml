@@ -34,6 +34,11 @@
             <e p="FundamentalAlgorithmsFactoryObject.cs" t="Include" />
             <e p="IAbstractFundamentalAlgorithms.cs" t="Include" />
           </e>
+          <e p="MatricesWorkflow" t="Include">
+            <e p="IAbstractMatricesWorkflow.cs" t="Include" />
+            <e p="MatricesWorkflow.cs" t="Include" />
+            <e p="MatricesWorkflowAbstractFactory.cs" t="Include" />
+          </e>
           <e p="NumbersAlgorithms" t="Include">
             <e p="IAbstractNumbersAlgorithms.cs" t="Include" />
             <e p="NumbersAlgorithms.cs" t="Include" />
