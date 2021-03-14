@@ -69,5 +69,18 @@ namespace TestESharp
             _oneDimensionalArray.SetOneDimensionalArray(new int []{1, 122, -33, 0, 345});
             Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsProduct(_oneDimensionalArray) == 0);
         }
+        
+        [Test]
+        public void Test_GetArrayElementsDifference_()
+        {
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{1, 2, 3, 4, 5});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsDifference(_oneDimensionalArray) == -13);
+            
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{-11, 2, -4, -10, 12});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsDifference(_oneDimensionalArray) == -11);
+            
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{1, 122, -33, 0, 345});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsDifference(_oneDimensionalArray) == -433);
+        }
     }
 }
