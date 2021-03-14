@@ -29,7 +29,12 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public int GetArrayElementsSum(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var sum = 0;
+            
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                sum += array.GetOneDimensionalArray()[it];
+
+            return sum;
         }
 
         public int GetArrayElementsProduct(IAbstractOneDimensionalArrayObject array)
