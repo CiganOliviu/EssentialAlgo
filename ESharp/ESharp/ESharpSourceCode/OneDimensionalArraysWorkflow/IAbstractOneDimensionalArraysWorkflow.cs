@@ -9,8 +9,8 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
         int GetArrayElementsSum(IAbstractOneDimensionalArrayObject array);
         int GetArrayElementsProduct(IAbstractOneDimensionalArrayObject array);
         int GetArrayElementsDifference(IAbstractOneDimensionalArrayObject array);
-        int GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array);
-        int GetArrayElementsMean(IAbstractOneDimensionalArrayObject array);
+        float GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array);
+        float GetArrayElementsMean(IAbstractOneDimensionalArrayObject array);
         bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array);
         int AddValueInArray(IAbstractOneDimensionalArrayObject array);
         bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value);

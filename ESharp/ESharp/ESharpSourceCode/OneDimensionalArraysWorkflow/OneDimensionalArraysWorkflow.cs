@@ -57,12 +57,17 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             return difference;
         }
 
-        public int GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array)
+        public float GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var division = array.GetOneDimensionalArray()[0];
+
+            for (var it = 1; it < array.GetLengthOfOneDimensionalArray(); it++)
+                division /= array.GetOneDimensionalArray()[it];
+
+            return division;
         }
 
-        public int GetArrayElementsMean(IAbstractOneDimensionalArrayObject array)
+        public float GetArrayElementsMean(IAbstractOneDimensionalArrayObject array)
         {
             throw new System.NotImplementedException();
         }
