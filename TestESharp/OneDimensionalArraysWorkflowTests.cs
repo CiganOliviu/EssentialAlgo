@@ -96,5 +96,18 @@ namespace TestESharp
             _oneDimensionalArray.SetOneDimensionalArray(new int []{345, 1, 2, 7});
             Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsDivision(_oneDimensionalArray) - 24.64) < 2);
         }
+        
+        [Test]
+        public void Test_GetArrayElementsMean_()
+        {
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{1, 2, 3, 4, 5});
+            Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsMean(_oneDimensionalArray) - 3) < 2);
+            
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{-11, 2, -4, -10, 12});
+            Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsMean(_oneDimensionalArray) - (-2.2)) < 2);
+            
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{345, 1, 2, 7});
+            Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsMean(_oneDimensionalArray) - 88.75) < 2);
+        }
     }
 }

@@ -69,7 +69,14 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public float GetArrayElementsMean(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var mean = array.GetOneDimensionalArray()[0];
+
+            for (var it = 1; it < array.GetLengthOfOneDimensionalArray(); it++)
+                mean += array.GetOneDimensionalArray()[it];
+
+            mean /= array.GetLengthOfOneDimensionalArray();
+
+            return mean;
         }
 
         public bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array)
