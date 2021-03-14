@@ -12,15 +12,19 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             for (var it = 1; it < array.GetLengthOfOneDimensionalArray(); it++)
                 if (min > array.GetOneDimensionalArray()[it])
                     min = array.GetOneDimensionalArray()[it];
-    
-            Console.Write(min);
-            
+
             return min;
         }
 
         public int GetMaximumValueFromArray(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var max = array.GetOneDimensionalArray()[0];
+            
+            for (var it = 1; it < array.GetLengthOfOneDimensionalArray(); it++)
+                if (max < array.GetOneDimensionalArray()[it])
+                    max = array.GetOneDimensionalArray()[it];
+
+            return max;
         }
 
         public int GetArrayElementsSum(IAbstractOneDimensionalArrayObject array)
