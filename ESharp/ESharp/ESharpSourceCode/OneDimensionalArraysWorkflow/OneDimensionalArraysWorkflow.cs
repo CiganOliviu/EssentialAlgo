@@ -115,15 +115,15 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         private int GetNumberSize(int number)
         {
-            int contor = 0;
+            var result = 0;
             
             while (number != 0)
             {
-                contor += 1;
+                result += 1;
                 number /= 10;
             }
 
-            return contor;
+            return result;
         }
         public int[] ConvertNumberToArray(int number)
         {
@@ -144,7 +144,12 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public int ConvertArrayToNumber(int[] array)
         {
-            throw new System.NotImplementedException();
+            int result = 0;
+            
+            foreach (var element in array)
+                result = result * 10 + element;
+
+            return result;
         }
 
         public int BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster)

@@ -130,5 +130,13 @@ namespace TestESharp
             Assert.AreEqual(_oneDimensionalArraysWorkflow.ConvertNumberToArray(12345), new int[]{1, 2, 3, 4, 5});
             Assert.AreEqual(_oneDimensionalArraysWorkflow.ConvertNumberToArray(963), new int[]{9, 6, 3});
         }
+        
+        [Test]
+        public void Test_ConvertArrayToNumber_()
+        {
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.ConvertArrayToNumber(new int[]{3, 4, 5}) == 345);
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.ConvertArrayToNumber(new int[]{1, 2, 3, 4, 5}) == 12345);
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.ConvertArrayToNumber(new int[]{9, 6, 3}) == 963);
+        }
     }
 }
