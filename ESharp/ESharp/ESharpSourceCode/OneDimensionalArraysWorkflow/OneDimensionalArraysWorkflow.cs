@@ -91,7 +91,11 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value)
         {
-            throw new System.NotImplementedException();
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                if (value == array.GetOneDimensionalArray()[it])
+                    return true;
+
+            return false;
         }
 
         public int[] ConvertNumberToArray(int number)
