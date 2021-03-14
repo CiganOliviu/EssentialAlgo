@@ -98,9 +98,48 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             return false;
         }
 
+        private int ReverseNumber(int number)
+        {
+            int result = 0;
+            
+            while (number != 0)
+            {
+                int digit = number % 10;
+                result = result * 10 + digit;
+                
+                number /= 10;
+            }
+
+            return result;
+        }
+
+        private int GetNumberSize(int number)
+        {
+            int contor = 0;
+            
+            while (number != 0)
+            {
+                contor += 1;
+                number /= 10;
+            }
+
+            return contor;
+        }
         public int[] ConvertNumberToArray(int number)
         {
-            throw new System.NotImplementedException();
+            int[] numberAsArray = new int[GetNumberSize(number)];
+            var it = 0;
+
+            number = ReverseNumber(number);
+            
+            while (number != 0)
+            {
+                numberAsArray[it] = number % 10;
+                it += 1;
+                number /= 10;
+            }
+
+            return numberAsArray;
         }
 
         public int ConvertArrayToNumber(int[] array)

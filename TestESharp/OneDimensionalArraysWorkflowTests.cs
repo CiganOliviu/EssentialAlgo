@@ -122,5 +122,13 @@ namespace TestESharp
             _oneDimensionalArray.SetOneDimensionalArray(new int []{1, 122, -33, 0, 345});
             Assert.IsTrue(_oneDimensionalArraysWorkflow.IsValueInArray(_oneDimensionalArray, 345) == true);
         }
+        
+        [Test]
+        public void Test_ConvertNumberToArray_()
+        {
+            Assert.AreEqual(_oneDimensionalArraysWorkflow.ConvertNumberToArray(345) , new int[]{3, 4, 5});
+            Assert.AreEqual(_oneDimensionalArraysWorkflow.ConvertNumberToArray(12345), new int[]{1, 2, 3, 4, 5});
+            Assert.AreEqual(_oneDimensionalArraysWorkflow.ConvertNumberToArray(963), new int[]{9, 6, 3});
+        }
     }
 }
