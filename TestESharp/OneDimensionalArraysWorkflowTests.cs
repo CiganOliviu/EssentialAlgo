@@ -56,5 +56,18 @@ namespace TestESharp
             _oneDimensionalArray.SetOneDimensionalArray(new int []{-3241, 122, -33, 544, 345});
             Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsSum(_oneDimensionalArray) == -2263);
         }
+        
+        [Test]
+        public void Test_GetArrayElementsProduct_()
+        {
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{1, 2, 3, 4, 5});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsProduct(_oneDimensionalArray) == 120);
+            
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{-11, 2, -4, -10, 12});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsProduct(_oneDimensionalArray) == -10560);
+            
+            _oneDimensionalArray.SetOneDimensionalArray(new int []{1, 122, -33, 0, 345});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsProduct(_oneDimensionalArray) == 0);
+        }
     }
 }

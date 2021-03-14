@@ -39,7 +39,12 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public int GetArrayElementsProduct(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var product = 1;
+
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                product *= array.GetOneDimensionalArray()[it];
+
+            return product;
         }
 
         public int GetArrayElementsDifference(IAbstractOneDimensionalArrayObject array)
