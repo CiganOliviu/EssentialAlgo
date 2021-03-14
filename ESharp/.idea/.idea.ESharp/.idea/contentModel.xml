@@ -80,6 +80,7 @@
           </e>
         </e>
       </e>
+      <e p="OneDimensionalArraysWorkflowTests.cs" t="Include" />
       <e p="TestESharp.csproj" t="IncludeRecursive" />
     </e>
   </component>

@@ -1,4 +1,5 @@
-﻿using ESharp.DataStructures.OneDimensionalArray;
+﻿using System;
+using ESharp.DataStructures.OneDimensionalArray;
 
 namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 {
@@ -6,7 +7,15 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
     {
         public int GetMinimumValueFromArray(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var min = array.GetOneDimensionalArray()[0];
+            
+            for (var it = 1; it < array.GetLengthOfOneDimensionalArray(); it++)
+                if (min > array.GetOneDimensionalArray()[it])
+                    min = array.GetOneDimensionalArray()[it];
+    
+            Console.Write(min);
+            
+            return min;
         }
 
         public int GetMaximumValueFromArray(IAbstractOneDimensionalArrayObject array)
