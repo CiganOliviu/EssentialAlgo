@@ -16,8 +16,8 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
         bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value);
         int[] ConvertNumberToArray(int number);
         int ConvertArrayToNumber(int[] array);
-        int BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster);
-        int BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster);
+        IAbstractOneDimensionalArrayObject BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster);
+        IAbstractOneDimensionalArrayObject BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster);
         IAbstractOneDimensionalArrayObject GetArraysSum(IAbstractOneDimensionalArrayObject arrayOne,
                                                         IAbstractOneDimensionalArrayObject arrayTwo);
         IAbstractOneDimensionalArrayObject GetArraysProduct(IAbstractOneDimensionalArrayObject arrayOne,

@@ -152,12 +152,12 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             return result;
         }
 
-        public int BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster)
+        public IAbstractOneDimensionalArrayObject BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster)
         {
             throw new System.NotImplementedException();
         }
 
-        public int BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster)
+        public IAbstractOneDimensionalArrayObject BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster)
         {
             throw new System.NotImplementedException();
         }
