@@ -12,7 +12,7 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
         float GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array);
         float GetArrayElementsMean(IAbstractOneDimensionalArrayObject array);
         bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array);
-        int AddValueInArray(IAbstractOneDimensionalArrayObject array);
+        IAbstractOneDimensionalArrayObject AddValueInArray(IAbstractOneDimensionalArrayObject array, int value);
         bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value);
         int[] ConvertNumberToArray(int number);
         int ConvertArrayToNumber(int[] array);

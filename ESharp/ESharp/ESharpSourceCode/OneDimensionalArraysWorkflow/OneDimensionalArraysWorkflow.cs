@@ -1,5 +1,4 @@
-﻿using System;
-using ESharp.DataStructures.OneDimensionalArray;
+﻿using ESharp.DataStructures.OneDimensionalArray;
 
 namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 {
@@ -96,10 +95,26 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
             return true;
         }
-
-        public int AddValueInArray(IAbstractOneDimensionalArrayObject array)
+        
+        private static void SetupNewArray(IAbstractOneDimensionalArrayObject array, int[] newArray)
         {
-            throw new System.NotImplementedException();
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                newArray[it] = array.GetOneDimensionalArray()[it];
+        }
+
+        public IAbstractOneDimensionalArrayObject AddValueInArray(IAbstractOneDimensionalArrayObject array, int value)
+        {
+            var result = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+
+            var newArray = new int[array.GetLengthOfOneDimensionalArray() + 1];
+
+            SetupNewArray(array, newArray);
+
+            newArray[array.GetLengthOfOneDimensionalArray()] = value;
+            
+            result.SetOneDimensionalArray(newArray);
+
+            return result;
         }
 
         public bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value)
@@ -111,13 +126,13 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             return false;
         }
 
-        private int ReverseNumber(int number)
+        private static int ReverseNumber(int number)
         {
-            int result = 0;
+            var result = 0;
             
             while (number != 0)
             {
-                int digit = number % 10;
+                var digit = number % 10;
                 result = result * 10 + digit;
                 
                 number /= 10;
@@ -126,7 +141,7 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             return result;
         }
 
-        private int GetNumberSize(int number)
+        private static int GetNumberSize(int number)
         {
             var result = 0;
             
@@ -140,7 +155,7 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
         }
         public int[] ConvertNumberToArray(int number)
         {
-            int[] numberAsArray = new int[GetNumberSize(number)];
+            var numberAsArray = new int[GetNumberSize(number)];
             var it = 0;
 
             number = ReverseNumber(number);
