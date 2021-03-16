@@ -173,7 +173,7 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public int ConvertArrayToNumber(int[] array)
         {
-            int result = 0;
+            var result = 0;
             
             foreach (var element in array)
                 result = result * 10 + element;
@@ -229,9 +229,21 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             throw new System.NotImplementedException();
         }
 
+        private static bool AssertNumbers(int firstNumber, int secondNumber)
+        {
+            return firstNumber == secondNumber;
+        }
+        
         public bool AreArraysEqual(IAbstractOneDimensionalArrayObject arrayOne, IAbstractOneDimensionalArrayObject arrayTwo)
         {
-            throw new System.NotImplementedException();
+            if (!AssertNumbers(arrayOne.GetLengthOfOneDimensionalArray(), arrayTwo.GetLengthOfOneDimensionalArray()))
+                return false;
+            
+            for (var it = 0; it < arrayOne.GetLengthOfOneDimensionalArray(); it++)
+                if (arrayOne.GetOneDimensionalArray()[it] != arrayTwo.GetOneDimensionalArray()[it])
+                    return false;
+            
+            return true;
         }
 
         public void SortArray(IAbstractOneDimensionalArrayObject array)
