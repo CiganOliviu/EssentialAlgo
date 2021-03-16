@@ -178,6 +178,7 @@ namespace TestESharp
                     GetOneDimensionalArray(), 
                 new []{0, 2, 4, 6, 8, 10});
             
+            
             Assert.AreEqual(_oneDimensionalArraysWorkflow.BoostUpArray(_oneDimensionalArray, 5).
                     GetOneDimensionalArray(), 
                 new []{0, 10, 20, 30, 40, 50});
@@ -185,6 +186,28 @@ namespace TestESharp
             Assert.AreEqual(_oneDimensionalArraysWorkflow.BoostUpArray(_oneDimensionalArray, 0).
                     GetOneDimensionalArray(), 
                 new []{0, 0, 0, 0, 0, 0});
+        }
+        
+        [Test]
+        public void Test_BoostDownArray_()
+        {
+            _oneDimensionalArray.SetOneDimensionalArray(new []{32, 1, 2, 3, 4, 5});
+          
+            Assert.AreEqual(_oneDimensionalArraysWorkflow.BoostDownArray(_oneDimensionalArray, 2).
+                    GetOneDimensionalArray(), 
+                new []{16, 0, 1, 1, 2, 2});
+            
+            _oneDimensionalArray.SetOneDimensionalArray(new []{32, 1, 2, 3, 4, 5});
+            
+            Assert.AreEqual(_oneDimensionalArraysWorkflow.BoostDownArray(_oneDimensionalArray, 5).
+                 GetOneDimensionalArray(), 
+             new []{6, 0, 0, 0, 0, 1});
+
+            _oneDimensionalArray.SetOneDimensionalArray(new []{32, 1, 2, 3, 4, 5});
+            
+            Assert.AreEqual(_oneDimensionalArraysWorkflow.BoostDownArray(_oneDimensionalArray, 1).
+                 GetOneDimensionalArray(), 
+             new []{32, 1, 2, 3, 4, 5});
         }
     }
 }

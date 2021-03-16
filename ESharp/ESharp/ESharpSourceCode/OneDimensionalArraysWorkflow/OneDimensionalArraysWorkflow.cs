@@ -1,4 +1,5 @@
-﻿using ESharp.DataStructures.OneDimensionalArray;
+﻿using System;
+using ESharp.DataStructures.OneDimensionalArray;
 
 namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 {
@@ -194,7 +195,14 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public IAbstractOneDimensionalArrayObject BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster)
         {
-            throw new System.NotImplementedException();
+            var result = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                array.GetOneDimensionalArray()[it] /= booster;
+            
+            result.SetOneDimensionalArray(array.GetOneDimensionalArray());
+
+            return result;
         }
 
         public IAbstractOneDimensionalArrayObject GetArraysSum(IAbstractOneDimensionalArrayObject arrayOne,
