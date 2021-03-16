@@ -1,5 +1,4 @@
-﻿using System;
-using ESharp.DataStructures.OneDimensionalArray;
+﻿using ESharp.DataStructures.OneDimensionalArray;
 
 namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 {
