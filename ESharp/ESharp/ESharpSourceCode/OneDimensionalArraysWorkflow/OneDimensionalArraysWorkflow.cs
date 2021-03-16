@@ -1,4 +1,5 @@
-﻿using ESharp.DataStructures.OneDimensionalArray;
+﻿using System;
+using ESharp.DataStructures.OneDimensionalArray;
 
 namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 {
@@ -80,7 +81,20 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var it = 0;
+            var jit = array.GetLengthOfOneDimensionalArray() - 1;
+
+            while (it < jit)
+            {
+
+                if (array.GetOneDimensionalArray()[it] != array.GetOneDimensionalArray()[jit])
+                    return false;
+                
+                it += 1;
+                jit -= 1;
+            }
+
+            return true;
         }
 
         public int AddValueInArray(IAbstractOneDimensionalArrayObject array)

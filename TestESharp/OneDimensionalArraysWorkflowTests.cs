@@ -109,6 +109,20 @@ namespace TestESharp
             _oneDimensionalArray.SetOneDimensionalArray(new []{345, 1, 2, 7});
             Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsMean(_oneDimensionalArray) - 88.75) < 2);
         }
+
+        [Test]
+        public void Test_IsArraySymmetric_()
+        {
+         
+            _oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 2, 1});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.IsArraySymmetric(_oneDimensionalArray));
+            
+            _oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 2, 6});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.IsArraySymmetric(_oneDimensionalArray) == false);
+
+            _oneDimensionalArray.SetOneDimensionalArray(new []{-101, -222, -222, -101});
+            Assert.IsTrue(_oneDimensionalArraysWorkflow.IsArraySymmetric(_oneDimensionalArray));
+        }
         
         [Test]
         public void Test_IsValueInArray_()
