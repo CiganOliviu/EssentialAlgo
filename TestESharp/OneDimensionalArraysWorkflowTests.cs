@@ -254,6 +254,21 @@ namespace TestESharp
             
             Assert.AreEqual(result.GetOneDimensionalArray(), expected);
         }
+        
+        [Test]
+        public void Test_GetArraysDivision_()
+        {
+            var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayOne.SetOneDimensionalArray(new []{10, 22, 33, 44});
+            
+            var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayTwo.SetOneDimensionalArray(new []{2, 3, 4, 10});
+            
+            var result = _oneDimensionalArraysWorkflow.GetArraysDivision(arrayOne, arrayTwo);
+            var expected = new int[] {5, 7, 8, 4};
+            
+            Assert.AreEqual(result.GetOneDimensionalArray(), expected);
+        }
 
         [Test]
         public void Test_AreArraysEqual_()
