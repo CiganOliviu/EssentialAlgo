@@ -221,7 +221,14 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
         public IAbstractOneDimensionalArrayObject GetArraysProduct(IAbstractOneDimensionalArrayObject arrayOne,
             IAbstractOneDimensionalArrayObject arrayTwo)
         {
-            throw new System.NotImplementedException();
+            var result = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            result.SetOneDimensionalArray(arrayOne.GetOneDimensionalArray());
+
+            for (var it = 0; it < arrayOne.GetLengthOfOneDimensionalArray(); it++)
+                result.GetOneDimensionalArray()[it] =
+                    arrayOne.GetOneDimensionalArray()[it] * arrayTwo.GetOneDimensionalArray()[it];
+
+            return result;
         }
 
         public IAbstractOneDimensionalArrayObject GetArraysDifference(IAbstractOneDimensionalArrayObject arrayOne,

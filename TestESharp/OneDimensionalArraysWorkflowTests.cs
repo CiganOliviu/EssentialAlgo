@@ -224,6 +224,21 @@ namespace TestESharp
             
             Assert.AreEqual(result.GetOneDimensionalArray(), expected);
         }
+        
+        [Test]
+        public void Test_GetArraysProduct_()
+        {
+            var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayOne.SetOneDimensionalArray(new []{1, 2, 3, 4});
+            
+            var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayTwo.SetOneDimensionalArray(new []{-1, -2, -3, -4});
+            
+            var result = _oneDimensionalArraysWorkflow.GetArraysProduct(arrayOne, arrayTwo);
+            var expected = new int[] {-1, -4, -9, -16};
+            
+            Assert.AreEqual(result.GetOneDimensionalArray(), expected);
+        }
 
         [Test]
         public void Test_AreArraysEqual_()
@@ -241,6 +256,7 @@ namespace TestESharp
             
             Assert.IsTrue(_oneDimensionalArraysWorkflow.AreArraysEqual(arrayOne, arrayTwo));
         }
+        
 
         [Test]
         public void Test_SortArray_()
