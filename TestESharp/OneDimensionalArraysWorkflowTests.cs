@@ -211,6 +211,21 @@ namespace TestESharp
         }
 
         [Test]
+        public void Test_GetArraysSum_()
+        {
+            var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayOne.SetOneDimensionalArray(new []{1, 2, 3, 4});
+            
+            var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayTwo.SetOneDimensionalArray(new []{-1, -2, -3, -4});
+            
+            var result = _oneDimensionalArraysWorkflow.GetArraysSum(arrayOne, arrayTwo);
+            var expected = new int[] {0, 0, 0, 0};
+            
+            Assert.AreEqual(result.GetOneDimensionalArray(), expected);
+        }
+
+        [Test]
         public void Test_AreArraysEqual_()
         {
             var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
