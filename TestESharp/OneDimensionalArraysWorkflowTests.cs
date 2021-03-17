@@ -213,7 +213,6 @@ namespace TestESharp
         [Test]
         public void Test_AreArraysEqual_()
         {
-
             var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
             var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
             
@@ -226,6 +225,16 @@ namespace TestESharp
             arrayTwo.SetOneDimensionalArray(new []{-1, 2, -3, 4, -5});
             
             Assert.IsTrue(_oneDimensionalArraysWorkflow.AreArraysEqual(arrayOne, arrayTwo));
+        }
+
+        [Test]
+        public void Test_SortArray_()
+        {
+            _oneDimensionalArray.SetOneDimensionalArray(new [] {7, 6, 5, 4, 3, 2, 1});
+            _oneDimensionalArraysWorkflow.SortArray(_oneDimensionalArray);
+            var expected = new int[] {1, 2, 3, 4, 5, 6, 7};
+            
+            Assert.AreEqual(_oneDimensionalArray.GetOneDimensionalArray(), expected);
         }
         
     }

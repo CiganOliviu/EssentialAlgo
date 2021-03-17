@@ -246,9 +246,19 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             return true;
         }
 
+        private static void SwapElements(ref int firstParameter, ref int secondParameter)
+        {
+            firstParameter += secondParameter;
+            secondParameter = firstParameter - secondParameter;
+            firstParameter -= secondParameter;
+        }
+        
         public void SortArray(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray() - 1; it++)
+                for (var jit = it + 1; jit < array.GetLengthOfOneDimensionalArray(); jit++)
+                    if (array.GetOneDimensionalArray()[it] > array.GetOneDimensionalArray()[jit])
+                        SwapElements(ref array.GetOneDimensionalArray()[it], ref array.GetOneDimensionalArray()[jit]);
         }
     }
 }
