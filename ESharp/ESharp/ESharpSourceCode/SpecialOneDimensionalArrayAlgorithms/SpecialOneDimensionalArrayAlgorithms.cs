@@ -29,7 +29,7 @@ namespace ESharp.ESharpSourceCode.SpecialOneDimensionalArrayAlgorithms
                         SwapElements(ref array.GetOneDimensionalArray()[it], ref array.GetOneDimensionalArray()[jit]);
         }
 
-        private static bool VerifyInsertionSortSwapCondition(IAbstractOneDimensionalArrayObject array, int jit, int temp)
+        private static bool VerifyInsertionCondition(IAbstractOneDimensionalArrayObject array, int jit, int temp)
         {
             return jit >= 0 && array.GetOneDimensionalArray()[jit] > temp;
         }
@@ -41,7 +41,7 @@ namespace ESharp.ESharpSourceCode.SpecialOneDimensionalArrayAlgorithms
                 var temp = array.GetOneDimensionalArray()[it];
                 var jit = it - 1;
 
-                while (VerifyInsertionSortSwapCondition(array, jit, temp))
+                while (VerifyInsertionCondition(array, jit, temp))
                 {
                     array.GetOneDimensionalArray()[jit + 1] = array.GetOneDimensionalArray()[jit];
                     jit--;
