@@ -19,7 +19,43 @@ namespace TestESharp
         }
 
         [Test]
-        public void Test__()
+        public void Test_BubbleSort_()
+        {
+            Assert.Pass();
+        }
+        
+        [Test]
+        public void Test_MinimumValueSort_()
+        {
+            Assert.Pass();
+        }
+        
+        [Test]
+        public void Test_InsertionSort_()
+        {
+            Assert.Pass();
+        }
+        
+        [Test]
+        public void Test_SelectionSort_()
+        {
+            Assert.Pass();
+        }
+        
+        [Test]
+        public void Test_ShellSort_()
+        {
+            Assert.Pass();
+        }
+        
+        [Test]
+        public void Test_LinearSearch_()
+        {
+            Assert.Pass();
+        }
+        
+        [Test]
+        public void Test_BinarySearchValue_()
         {
             Assert.Pass();
         }
