@@ -93,7 +93,11 @@ namespace ESharp.ESharpSourceCode.SpecialOneDimensionalArrayAlgorithms
 
         public bool LinearSearchValue(IAbstractOneDimensionalArrayObject array, int valueToSearch)
         {
-            throw new System.NotImplementedException();
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                if (array.GetOneDimensionalArray()[it] == valueToSearch)
+                    return true;
+
+            return false;
         }
 
         public bool BinarySearchValue(IAbstractOneDimensionalArrayObject array, int valueToSearch)
