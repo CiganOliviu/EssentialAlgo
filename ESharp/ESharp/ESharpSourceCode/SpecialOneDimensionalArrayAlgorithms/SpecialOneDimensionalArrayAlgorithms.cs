@@ -1,4 +1,5 @@
-﻿using ESharp.DataStructures.OneDimensionalArray;
+﻿using System;
+using ESharp.DataStructures.OneDimensionalArray;
 
 namespace ESharp.ESharpSourceCode.SpecialOneDimensionalArrayAlgorithms
 {
@@ -22,7 +23,10 @@ namespace ESharp.ESharpSourceCode.SpecialOneDimensionalArrayAlgorithms
 
         public void MinimumValueSort(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray() - 1; it++)
+                for (var jit = it + 1; jit < array.GetLengthOfOneDimensionalArray(); jit++)
+                    if (array.GetOneDimensionalArray()[it] > array.GetOneDimensionalArray()[jit])
+                        SwapElements(ref array.GetOneDimensionalArray()[it], ref array.GetOneDimensionalArray()[jit]);
         }
 
         public void InsertionSort(IAbstractOneDimensionalArrayObject array)
