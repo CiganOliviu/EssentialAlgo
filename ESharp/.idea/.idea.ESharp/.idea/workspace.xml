@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="336778e3-1647-4667-a72c-7b0f1c14a832" name="Default Changelist" comment="" />
+    <list default="true" id="336778e3-1647-4667-a72c-7b0f1c14a832" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/IAbstractMatricesWorkflow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/IAbstractMatricesWorkflow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../TestESharp/obj/Debug/netcoreapp3.1/TestESharp.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,12 +54,12 @@
       <option value="$PROJECT_DIR$/../TestESharp/NumbersPropertiesVerifierTests.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersPropertiesVerifier/NumbersPropertiesVerifier.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/OneDimensionalArraysWorkflow/OneDimensionalArraysWorkflowFactoryObject.cs" />
-      <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/IAbstractMatricesWorkflow.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/MatricesWorkflowAbstractFactory.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/MatricesWorkflow.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/OneDimensionalArraysWorkflow/IAbstractOneDimensionalArraysWorkflow.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/OneDimensionalArraysWorkflow/OneDimensionalArraysWorkflow.cs" />
       <option value="$PROJECT_DIR$/../TestESharp/OneDimensionalArraysWorkflowTests.cs" />
+      <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/IAbstractMatricesWorkflow.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOCid7BLc1raT6SrI3MvAOIcRt" />
@@ -77,7 +81,7 @@
     <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.ESharp">
+  <component name="RunManager">
     <configuration name="ESharp" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -118,7 +122,8 @@
       <workItem from="1615750795798" duration="5878000" />
       <workItem from="1615798807215" duration="1776000" />
       <workItem from="1615911191217" duration="4732000" />
-      <workItem from="1616004119164" duration="2387000" />
+      <workItem from="1616004119164" duration="2980000" />
+      <workItem from="1616072331878" duration="1380000" />
     </task>
     <servers />
   </component>
