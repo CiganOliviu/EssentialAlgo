@@ -1,6 +1,6 @@
 ﻿namespace ESharp.ESharpSourceCode.MatricesWorkflow
 {
-    public class MatricesWorkflowAbstractFactory
+    public class MatricesWorkflowFactoryObject
     {
         public static IAbstractMatricesWorkflow GetMatricesWorkflowObject()
         {
