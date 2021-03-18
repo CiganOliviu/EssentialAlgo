@@ -21,43 +21,73 @@ namespace TestESharp
         [Test]
         public void Test_BubbleSort_()
         {
-            Assert.Pass();
+            _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+            _specialOneDimensionalArrayAlgorithms.BubbleSort(_array);
+            
+            var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
+            
+            Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
         }
         
         [Test]
         public void Test_MinimumValueSort_()
         {
-            Assert.Pass();
+            _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+            _specialOneDimensionalArrayAlgorithms.MinimumValueSort(_array);
+            
+            var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
+            
+            Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
         }
         
         [Test]
         public void Test_InsertionSort_()
         {
-            Assert.Pass();
+            _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+            _specialOneDimensionalArrayAlgorithms.InsertionSort(_array);
+            
+            var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
+            
+            Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
         }
         
         [Test]
         public void Test_SelectionSort_()
         {
-            Assert.Pass();
+            _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+            _specialOneDimensionalArrayAlgorithms.SelectionSort(_array);
+            
+            var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
+            
+            Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
         }
         
         [Test]
         public void Test_ShellSort_()
         {
-            Assert.Pass();
+            _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+            _specialOneDimensionalArrayAlgorithms.ShellSort(_array);
+            
+            var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
+            
+            Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
         }
         
         [Test]
-        public void Test_LinearSearch_()
+        public void Test_LinearSearchValue_()
         {
-            Assert.Pass();
+            _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+            
+            Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.LinearSearchValue(_array, 2));
+            
         }
         
         [Test]
         public void Test_BinarySearchValue_()
         {
-            Assert.Pass();
+            _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+            
+            Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.BinarySearchValue(_array, 2));
         }
     }
 }
