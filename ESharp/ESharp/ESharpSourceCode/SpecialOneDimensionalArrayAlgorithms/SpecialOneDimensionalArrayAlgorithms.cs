@@ -100,9 +100,38 @@ namespace ESharp.ESharpSourceCode.SpecialOneDimensionalArrayAlgorithms
             return false;
         }
 
+        private static void ProcessCaseWhenValueIsUnderMiddlePoint(IAbstractOneDimensionalArrayObject array, int valueToSearch,
+            int middlePoint, ref int rightIndex)
+        {
+            if (valueToSearch < array.GetOneDimensionalArray()[middlePoint])
+                rightIndex = middlePoint - 1;
+        }
+        
+        private static void ProcessCaseWhenValueIsAboveMiddlePoint(IAbstractOneDimensionalArrayObject array, int valueToSearch,
+            int middlePoint, ref int leftIndex)
+        {
+            if (valueToSearch > array.GetOneDimensionalArray()[middlePoint])
+                leftIndex = middlePoint + 1;
+        }
+        
         public bool BinarySearchValue(IAbstractOneDimensionalArrayObject array, int valueToSearch)
         {
-            throw new System.NotImplementedException();
+            var leftIndex = 0;
+            var rightIndex = array.GetLengthOfOneDimensionalArray() - 1;
+
+            while (leftIndex < rightIndex)
+            {
+                var middlePoint = (leftIndex + rightIndex) / 2;
+
+                if (valueToSearch == array.GetOneDimensionalArray()[middlePoint]) 
+                    return true;
+                
+                ProcessCaseWhenValueIsUnderMiddlePoint(array, valueToSearch, middlePoint, ref rightIndex);
+                
+                ProcessCaseWhenValueIsAboveMiddlePoint(array, valueToSearch, middlePoint, ref leftIndex);
+            }
+
+            return false;
         }
     }
 }

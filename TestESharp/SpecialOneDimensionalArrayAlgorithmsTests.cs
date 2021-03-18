@@ -87,6 +87,8 @@ namespace TestESharp
         {
             _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
             
+            _specialOneDimensionalArrayAlgorithms.BubbleSort(_array);
+            
             Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.BinarySearchValue(_array, 2));
         }
     }
