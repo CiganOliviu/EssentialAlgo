@@ -59,9 +59,36 @@ namespace ESharp.ESharpSourceCode.SpecialOneDimensionalArrayAlgorithms
                         SwapElements(ref array.GetOneDimensionalArray()[it], ref array.GetOneDimensionalArray()[jit]);
         }
 
+        private static int PerformSwapIfPossible(IAbstractOneDimensionalArrayObject array, int jit, int step)
+        {
+            if (array.GetOneDimensionalArray()[jit] > array.GetOneDimensionalArray()[jit + step])
+            {
+                SwapElements(ref array.GetOneDimensionalArray()[jit],
+                    ref array.GetOneDimensionalArray()[jit + step]);
+
+                jit -= step;
+            }
+            else jit--;
+
+            return jit;
+        }
+        
         public void ShellSort(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var step = array.GetLengthOfOneDimensionalArray() / 2;
+
+            while (step > 0)
+            {
+                for (var it = step; it < array.GetLengthOfOneDimensionalArray(); it++)
+                {
+                    var jit = it - step;
+
+                    while (jit >= 0)
+                        jit = PerformSwapIfPossible(array, jit, step);
+                }
+                
+                step /= 2;
+            }
         }
 
         public bool LinearSearchValue(IAbstractOneDimensionalArrayObject array, int valueToSearch)
