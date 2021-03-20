@@ -62,7 +62,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{-1, -2, -3}, {-4, -5, -6}, {-7, -8, -9}});
             
-            Assert.IsTrue(_matricesWorkflow.GetMatrixElementsDifference(_matrix) == -45);
+            Assert.IsTrue(_matricesWorkflow.GetMatrixElementsDifference(_matrix) == 45);
         }
         
         [Test]
