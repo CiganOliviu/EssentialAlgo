@@ -108,7 +108,13 @@ namespace TestESharp
         [Test]
         public void Test_GetMainDiagonalElementsFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {1, 5, 9};
+            
+            Assert.AreEqual(_matricesWorkflow.GetMainDiagonalElementsFromMatrix(_matrix), expected);
         }
         
         [Test]

@@ -97,9 +97,26 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             throw new System.NotImplementedException();
         }
 
+        private static int AddValueInArray(IAbstractMatrix matrix, int[] result, int index, int it, int jit)
+        {
+            result[index] = matrix.GetMatrix()[it, jit];
+            index += 1;
+            
+            return index;
+        }
+        
         public int[] GetMainDiagonalElementsFromMatrix(IAbstractMatrix matrix)
         {
-            throw new System.NotImplementedException();
+            var result = new int[matrix.GetLineOfMatrix()];
+            var index = 0;
+            
+            for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
+                    if (it == jit)
+                        index = AddValueInArray(matrix, result, index, it, jit);
+                    
+
+            return result;
         }
 
         public int[] GetElementsAboveMainDiagonalFromMatrix(IAbstractMatrix matrix)
