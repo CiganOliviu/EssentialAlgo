@@ -20,7 +20,7 @@ namespace TestESharp
         {
             _matrix.SetLineOfMatrix(3);
             _matrix.SetColumnOfMatrix(3);
-            _matrix.SetMatrix(new int[,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
             
             Assert.IsTrue(_matricesWorkflow.GetMaximumValueFromMatrix(_matrix) == 9);
         }
@@ -28,31 +28,51 @@ namespace TestESharp
         [Test]
         public void Test_GetMinimumValueFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+            
+            Assert.IsTrue(_matricesWorkflow.GetMinimumValueFromMatrix(_matrix) == 1);
         }
         
         [Test]
         public void Test_GetMatrixElementsSum_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+            
+            Assert.IsTrue(_matricesWorkflow.GetMatrixElementsSum(_matrix) == 45);
         }
         
         [Test]
         public void Test_GetMatrixElementsProduct_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {0, 8, 9}});
+            
+            Assert.IsTrue(_matricesWorkflow.GetMatrixElementsProduct(_matrix) == 0);
         }
         
         [Test]
         public void Test_GetMatrixElementsDifference_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{-1, -2, -3}, {-4, -5, -6}, {-7, -8, -9}});
+            
+            Assert.IsTrue(_matricesWorkflow.GetMatrixElementsDifference(_matrix) == -45);
         }
         
         [Test]
         public void Test_GetMatrixElementsDivision_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{4, 3}, {2, 1}});
+            
+            Assert.IsTrue(_matricesWorkflow.GetMatrixElementsDivision(_matrix) == 0);
         }
         
         [Test]
