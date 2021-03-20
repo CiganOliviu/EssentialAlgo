@@ -78,31 +78,31 @@ namespace TestESharp
         [Test]
         public void Test_BoostUpMatrix_()
         {
-            Assert.Pass();
+            Assert.Fail();
         }
         
         [Test]
         public void Test_BoostDownMatrix_()
         {
-            Assert.Pass();
+            Assert.Fail();
         }
         
         [Test]
         public void Test_GetMatricesSum_()
         {
-            Assert.Pass();
+            Assert.Fail();
         }
         
         [Test]
         public void Test_GetMatricesDifference_()
         {
-            Assert.Pass();
+            Assert.Fail();
         }
         
         [Test]
         public void Test_GetMatricesProduct_()
         {
-            Assert.Pass();
+            Assert.Fail();
         }
         
         [Test]
