@@ -112,7 +112,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {1, 5, 9};
+            var expected = new [] {1, 5, 9};
             
             Assert.AreEqual(_matricesWorkflow.GetMainDiagonalElementsFromMatrix(_matrix), expected);
         }
@@ -120,55 +120,113 @@ namespace TestESharp
         [Test]
         public void Test_GetElementsAboveMainDiagonalFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new [] {4, 7, 8};
+            
+            Assert.AreEqual(_matricesWorkflow.GetElementsAboveMainDiagonalFromMatrix(_matrix), expected);
         }
         
         [Test]
         public void Test_GetElementsUnderMainDiagonalFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {2, 3, 6};
+            
+            Assert.AreEqual(_matricesWorkflow.GetElementsUnderMainDiagonalFromMatrix(_matrix), expected);
         }
 
         [Test]
         public void Test_GetSecondaryDiagonalElementsFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {3, 5, 7};
+            
+            Assert.AreEqual(_matricesWorkflow.GetSecondaryDiagonalElementsFromMatrix(_matrix), expected);
         }
         
         [Test]
         public void Test_GetElementsAboveSecondaryDiagonalFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {6, 8, 9};
+            
+            Assert.AreEqual(_matricesWorkflow.GetElementsAboveSecondaryDiagonalFromMatrix(_matrix), expected);
         }
         
         [Test]
         public void Test_GetElementsUnderSecondaryDiagonalFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {1, 2, 4};
+            
+            Assert.AreEqual(_matricesWorkflow.GetElementsUnderSecondaryDiagonalFromMatrix(_matrix), expected);
         }
         
         [Test]
         public void Test_GetNorthElementsFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {2};
+            
+            Assert.AreEqual(_matricesWorkflow.GetNorthElementsFromMatrix(_matrix), expected);
+
         }
         
         [Test]
         public void Test_GetSouthElementsFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {8};
+            
+            Assert.AreEqual(_matricesWorkflow.GetSouthElementsFromMatrix(_matrix), expected);
+
         }
 
         [Test]
         public void Test_GetEastElementsFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {6};
+            
+            Assert.AreEqual(_matricesWorkflow.GetEastElementsFromMatrix(_matrix), expected);
+
         }
         
         [Test]
         public void Test_GetWestElementsFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+            var expected = new int[] {4};
+            
+            Assert.AreEqual(_matricesWorkflow.GetWestElementsFromMatrix(_matrix), expected);
+
         }
     }
 }
