@@ -21,16 +21,22 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             var result = matrix.GetMatrix()[0, 0];
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
-            for (var jit = 1; jit < matrix.GetColumnOfMatrix(); jit++)
-                if (result > matrix.GetMatrix()[it, jit])
-                    result = matrix.GetMatrix()[it, jit];
+                for (var jit = 1; jit < matrix.GetColumnOfMatrix(); jit++)
+                    if (result > matrix.GetMatrix()[it, jit])
+                        result = matrix.GetMatrix()[it, jit];
 
             return result;
         }
 
         public int GetMatrixElementsSum(IAbstractMatrix matrix)
         {
-            throw new System.NotImplementedException();
+            var result = 0;
+            
+            for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
+                    result += matrix.GetMatrix()[it, jit];
+
+            return result;
         }
 
         public int GetMatrixElementsProduct(IAbstractMatrix matrix)
