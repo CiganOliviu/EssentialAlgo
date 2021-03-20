@@ -78,7 +78,13 @@ namespace TestESharp
         [Test]
         public void Test_BoostUpMatrix_()
         {
-            Assert.Fail();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {0, 8, 9}});
+
+            var expected = new int[,] {{2, 4, 6}, {8, 10, 12}, {0, 16, 18}};
+            
+            Assert.AreEqual(_matricesWorkflow.BoostUpMatrix(_matrix, 2).GetMatrix(), expected);
         }
         
         [Test]

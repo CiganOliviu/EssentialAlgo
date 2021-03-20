@@ -72,12 +72,21 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             return result;
         }
 
-        public IAbstractMatrix BoostUpMatrix(IAbstractMatrix matrix)
+        public IAbstractMatrix BoostUpMatrix(IAbstractMatrix matrix, int booster)
         {
-            throw new System.NotImplementedException();
+            var result = MatrixFactoryObject.GetMatrixObject();
+            result.SetLineOfMatrix(matrix.GetLineOfMatrix());
+            result.SetColumnOfMatrix(matrix.GetColumnOfMatrix());
+            result.SetMatrix(matrix.GetMatrix());
+            
+            for (var it = 0; it < result.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < result.GetColumnOfMatrix(); jit++)
+                    result.GetMatrix()[it, jit] *= booster;
+
+            return result;
         }
 
-        public IAbstractMatrix BoostDownMatrix(IAbstractMatrix matrix)
+        public IAbstractMatrix BoostDownMatrix(IAbstractMatrix matrix, int booster)
         {
             throw new System.NotImplementedException();
         }
