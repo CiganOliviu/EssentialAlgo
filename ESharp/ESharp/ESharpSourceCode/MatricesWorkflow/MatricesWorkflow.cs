@@ -102,7 +102,16 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
 
         public IAbstractMatrix GetMatricesSum(IAbstractMatrix matrixOne, IAbstractMatrix matrixTwo)
         {
-            throw new System.NotImplementedException();
+            var result = MatrixFactoryObject.GetMatrixObject();
+            result.SetLineOfMatrix(matrixOne.GetLineOfMatrix());
+            result.SetColumnOfMatrix(matrixOne.GetColumnOfMatrix());
+            result.SetMatrix(matrixOne.GetMatrix());
+            
+            for (var it = 0; it < matrixOne.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < matrixOne.GetColumnOfMatrix(); jit++)
+                    result.GetMatrix()[it, jit] += matrixTwo.GetMatrix()[it, jit];
+
+            return result;
         }
 
         public IAbstractMatrix GetMatricesDifference(IAbstractMatrix matrixOne, IAbstractMatrix matrixTwo)
