@@ -102,19 +102,58 @@ namespace TestESharp
         [Test]
         public void Test_GetMatricesSum_()
         {
-            Assert.Fail();
+            var firstMatrix = MatrixFactoryObject.GetMatrixObject();
+            firstMatrix.SetLineOfMatrix(3);
+            firstMatrix.SetColumnOfMatrix(3);
+            firstMatrix.SetMatrix(new [, ]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+            
+            var secondMatrix = MatrixFactoryObject.GetMatrixObject();
+            secondMatrix.SetLineOfMatrix(3);
+            secondMatrix.SetColumnOfMatrix(3);
+            secondMatrix.SetMatrix(new [, ]{{7, 8, 9}, {4, 5, 6}, {1, 2, 3}});
+
+            var expected = new[,] {{8, 10, 12}, {8, 10, 12}, {8, 10, 12}};
+
+            Assert.AreEqual(_matricesWorkflow.GetMatricesSum(firstMatrix,secondMatrix).GetMatrix(),
+                expected);
         }
         
         [Test]
         public void Test_GetMatricesDifference_()
         {
-            Assert.Fail();
+            var firstMatrix = MatrixFactoryObject.GetMatrixObject();
+            firstMatrix.SetLineOfMatrix(3);
+            firstMatrix.SetColumnOfMatrix(3);
+            firstMatrix.SetMatrix(new [, ]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+            
+            var secondMatrix = MatrixFactoryObject.GetMatrixObject();
+            secondMatrix.SetLineOfMatrix(3);
+            secondMatrix.SetColumnOfMatrix(3);
+            secondMatrix.SetMatrix(new [, ]{{7, 8, 9}, {4, 5, 6}, {1, 2, 3}});
+
+            var expected = new[,] {{-6, -6, -6}, {0, 0, 0}, {6, 6, 6}};
+
+            Assert.AreEqual(_matricesWorkflow.GetMatricesDifference(firstMatrix,secondMatrix).GetMatrix(),
+                expected);
         }
         
         [Test]
         public void Test_GetMatricesProduct_()
         {
-            Assert.Fail();
+            var firstMatrix = MatrixFactoryObject.GetMatrixObject();
+            firstMatrix.SetLineOfMatrix(3);
+            firstMatrix.SetColumnOfMatrix(3);
+            firstMatrix.SetMatrix(new [, ]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+            
+            var secondMatrix = MatrixFactoryObject.GetMatrixObject();
+            secondMatrix.SetLineOfMatrix(3);
+            secondMatrix.SetColumnOfMatrix(3);
+            secondMatrix.SetMatrix(new [, ]{{7, 8, 9}, {4, 5, 6}, {1, 2, 3}});
+
+            var expected = new[,] {{7, 16, 27}, {16, 25, 36}, {7, 16, 27}};
+
+            Assert.AreEqual(_matricesWorkflow.GetMatricesProduct(firstMatrix,secondMatrix).GetMatrix(),
+                expected);
         }
         
         [Test]
