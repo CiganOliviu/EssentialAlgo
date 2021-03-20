@@ -6,10 +6,10 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
     {
         public int GetMaximumValueFromMatrix(IAbstractMatrix matrix)
         {
-            var result = 0;
+            var result = matrix.GetMatrix()[0, 0];
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
-                for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
+                for (var jit = 1; jit < matrix.GetColumnOfMatrix(); jit++)
                     if (result < matrix.GetMatrix()[it, jit])
                         result = matrix.GetMatrix()[it, jit];
 
@@ -18,7 +18,14 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
 
         public int GetMinimumValueFromMatrix(IAbstractMatrix matrix)
         {
-            throw new System.NotImplementedException();
+            var result = matrix.GetMatrix()[0, 0];
+            
+            for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
+            for (var jit = 1; jit < matrix.GetColumnOfMatrix(); jit++)
+                if (result > matrix.GetMatrix()[it, jit])
+                    result = matrix.GetMatrix()[it, jit];
+
+            return result;
         }
 
         public int GetMatrixElementsSum(IAbstractMatrix matrix)
