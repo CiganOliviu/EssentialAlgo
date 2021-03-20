@@ -105,6 +105,11 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             return index;
         }
         
+        private static bool IsElementOnMainDiagonal(int it, int jit)
+        {
+            return it == jit;
+        }
+        
         public int[] GetMainDiagonalElementsFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix()];
@@ -112,13 +117,18 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it == jit)
+                    if (IsElementOnMainDiagonal(it, jit))
                         index = AddValueInArray(matrix, result, index, it, jit);
                     
 
             return result;
         }
-
+        
+        private static bool IsElementAboveTheMainDiagonal(int it, int jit)
+        {
+            return it > jit;
+        }
+        
         public int[] GetElementsAboveMainDiagonalFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix()];
@@ -126,12 +136,17 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it > jit)
+                    if (IsElementAboveTheMainDiagonal(it, jit))
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
         }
-
+        
+        private static bool IsElementUnderTheMainDiagonal(int it, int jit)
+        {
+            return it < jit;
+        }
+        
         public int[] GetElementsUnderMainDiagonalFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix()];
@@ -139,12 +154,17 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it < jit)
+                    if (IsElementUnderTheMainDiagonal(it, jit))
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
         }
 
+        private static bool IsElementOnTheSecondaryDiagonal(IAbstractMatrix matrix, int it, int jit)
+        {
+            return it + jit == matrix.GetLineOfMatrix() - 1;
+        }
+        
         public int[] GetSecondaryDiagonalElementsFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix()];
@@ -152,12 +172,17 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it + jit == matrix.GetLineOfMatrix() - 1) 
+                    if (IsElementOnTheSecondaryDiagonal(matrix, it, jit)) 
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
         }
 
+        private static bool IsElementAboveTheSecondaryDiagonal(IAbstractMatrix matrix, int it, int jit)
+        {
+            return it + jit > matrix.GetLineOfMatrix() - 1;
+        }
+        
         public int[] GetElementsAboveSecondaryDiagonalFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix()];
@@ -165,12 +190,17 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it + jit > matrix.GetLineOfMatrix() - 1) 
+                    if (IsElementAboveTheSecondaryDiagonal(matrix, it, jit)) 
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
         }
 
+        private static bool IsElementUnderTheSecondaryDiagonal(IAbstractMatrix matrix, int it, int jit)
+        {
+            return it + jit < matrix.GetLineOfMatrix() - 1;
+        }
+        
         public int[] GetElementsUnderSecondaryDiagonalFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix()];
@@ -178,12 +208,17 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it + jit < matrix.GetLineOfMatrix() - 1) 
+                    if (IsElementUnderTheSecondaryDiagonal(matrix, it, jit)) 
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
         }
 
+        private static bool IsElementInTheNorth(IAbstractMatrix matrix, int it, int jit)
+        {
+            return it < jit && it + jit < matrix.GetLineOfMatrix() - 1;
+        }
+        
         public int[] GetNorthElementsFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix() - 2];
@@ -191,12 +226,17 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it < jit && it + jit < matrix.GetLineOfMatrix() - 1) 
+                    if (IsElementInTheNorth(matrix, it, jit)) 
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
         }
 
+        private static bool IsElementInTheSouth(IAbstractMatrix matrix, int it, int jit)
+        {
+            return it > jit && it + jit > matrix.GetLineOfMatrix() - 1;
+        }
+        
         public int[] GetSouthElementsFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix() - 2];
@@ -204,10 +244,15 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it > jit && it + jit > matrix.GetLineOfMatrix() - 1) 
+                    if (IsElementInTheSouth(matrix, it, jit)) 
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
+        }
+        
+        private static bool IsElementInTheEast(IAbstractMatrix matrix, int it, int jit)
+        {
+            return it < jit && it + jit > matrix.GetLineOfMatrix() - 1;
         }
 
         public int[] GetEastElementsFromMatrix(IAbstractMatrix matrix)
@@ -217,12 +262,17 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it < jit && it + jit > matrix.GetLineOfMatrix() - 1) 
+                    if (IsElementInTheEast(matrix, it, jit)) 
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
         }
 
+        private static bool IsElementInTheWest(IAbstractMatrix matrix, int it, int jit)
+        {
+            return it > jit && it + jit < matrix.GetLineOfMatrix() - 1;
+        }
+        
         public int[] GetWestElementsFromMatrix(IAbstractMatrix matrix)
         {
             var result = new int[matrix.GetLineOfMatrix() - 2];
@@ -230,7 +280,7 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
             
             for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
                 for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
-                    if (it > jit && it + jit < matrix.GetLineOfMatrix() - 1) 
+                    if (IsElementInTheWest(matrix, it, jit)) 
                         index = AddValueInArray(matrix, result, index, it, jit);
 
             return result;
