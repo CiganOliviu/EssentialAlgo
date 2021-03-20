@@ -196,7 +196,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {8};
+            var expected = new [] {8};
             
             Assert.AreEqual(_matricesWorkflow.GetSouthElementsFromMatrix(_matrix), expected);
 
@@ -209,7 +209,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {6};
+            var expected = new [] {6};
             
             Assert.AreEqual(_matricesWorkflow.GetEastElementsFromMatrix(_matrix), expected);
 
@@ -222,7 +222,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {4};
+            var expected = new [] {4};
             
             Assert.AreEqual(_matricesWorkflow.GetWestElementsFromMatrix(_matrix), expected);
 
