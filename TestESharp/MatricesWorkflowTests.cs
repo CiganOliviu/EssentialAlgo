@@ -1,4 +1,5 @@
-﻿using ESharp.ESharpSourceCode.MatricesWorkflow;
+﻿using ESharp.DataStructures.Matrix;
+using ESharp.ESharpSourceCode.MatricesWorkflow;
 using NUnit.Framework;
 
 namespace TestESharp
@@ -6,17 +7,22 @@ namespace TestESharp
     public class MatricesWorkflowTests
     {
         private IAbstractMatricesWorkflow _matricesWorkflow;
-
+        private IAbstractMatrix _matrix;
         [SetUp]
         public void Setup()
         {
             _matricesWorkflow = MatricesWorkflowFactoryObject.GetMatricesWorkflowObject();
+            _matrix = MatrixFactoryObject.GetMatrixObject();
         }
 
         [Test]
         public void Test_GetMaximumValueFromMatrix_()
         {
-            Assert.Pass();
+            _matrix.SetLineOfMatrix(3);
+            _matrix.SetColumnOfMatrix(3);
+            _matrix.SetMatrix(new int[,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+            
+            Assert.IsTrue(_matricesWorkflow.GetMaximumValueFromMatrix(_matrix) == 9);
         }
         
         [Test]
