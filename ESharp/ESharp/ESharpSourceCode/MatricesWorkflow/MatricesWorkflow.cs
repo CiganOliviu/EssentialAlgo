@@ -212,7 +212,15 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
 
         public int[] GetEastElementsFromMatrix(IAbstractMatrix matrix)
         {
-            throw new System.NotImplementedException();
+            var result = new int[matrix.GetLineOfMatrix() - 2];
+            var index = 0;
+            
+            for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
+                    if (it < jit && it + jit > matrix.GetLineOfMatrix() - 1) 
+                        index = AddValueInArray(matrix, result, index, it, jit);
+
+            return result;
         }
 
         public int[] GetWestElementsFromMatrix(IAbstractMatrix matrix)
