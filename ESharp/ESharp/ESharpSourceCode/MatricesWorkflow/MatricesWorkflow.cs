@@ -121,7 +121,15 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
 
         public int[] GetElementsAboveMainDiagonalFromMatrix(IAbstractMatrix matrix)
         {
-            throw new System.NotImplementedException();
+            var result = new int[matrix.GetLineOfMatrix()];
+            var index = 0;
+            
+            for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
+                    if (it > jit)
+                        index = AddValueInArray(matrix, result, index, it, jit);
+
+            return result;
         }
 
         public int[] GetElementsUnderMainDiagonalFromMatrix(IAbstractMatrix matrix)
