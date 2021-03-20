@@ -41,7 +41,13 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
 
         public int GetMatrixElementsProduct(IAbstractMatrix matrix)
         {
-            throw new System.NotImplementedException();
+            var result = 0;
+            
+            for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
+                    result *= matrix.GetMatrix()[it, jit];
+
+            return result;
         }
 
         public int GetMatrixElementsDifference(IAbstractMatrix matrix)
