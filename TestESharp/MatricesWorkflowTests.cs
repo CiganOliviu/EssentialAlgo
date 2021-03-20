@@ -136,7 +136,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {2, 3, 6};
+            var expected = new [] {2, 3, 6};
             
             Assert.AreEqual(_matricesWorkflow.GetElementsUnderMainDiagonalFromMatrix(_matrix), expected);
         }
@@ -148,7 +148,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {3, 5, 7};
+            var expected = new [] {3, 5, 7};
             
             Assert.AreEqual(_matricesWorkflow.GetSecondaryDiagonalElementsFromMatrix(_matrix), expected);
         }
@@ -160,7 +160,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {6, 8, 9};
+            var expected = new [] {6, 8, 9};
             
             Assert.AreEqual(_matricesWorkflow.GetElementsAboveSecondaryDiagonalFromMatrix(_matrix), expected);
         }
@@ -172,7 +172,7 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {1, 2, 4};
+            var expected = new [] {1, 2, 4};
             
             Assert.AreEqual(_matricesWorkflow.GetElementsUnderSecondaryDiagonalFromMatrix(_matrix), expected);
         }
@@ -184,10 +184,9 @@ namespace TestESharp
             _matrix.SetColumnOfMatrix(3);
             _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 
-            var expected = new int[] {2};
+            var expected = new [] {2};
             
             Assert.AreEqual(_matricesWorkflow.GetNorthElementsFromMatrix(_matrix), expected);
-
         }
         
         [Test]
