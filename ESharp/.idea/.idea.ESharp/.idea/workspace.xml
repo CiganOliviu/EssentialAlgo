@@ -26,6 +26,7 @@
       <change afterPath="$PROJECT_DIR$/ESharp/DataStructures/Graph/Graph.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ESharp/DataStructures/Graph/GraphFactoryObject.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ESharp/DataStructures/Graph/IAbstractGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +150,7 @@
       <workItem from="1616092610302" duration="2420000" />
       <workItem from="1616244115980" duration="2026000" />
       <workItem from="1616254920216" duration="5052000" />
-      <workItem from="1616437466351" duration="4508000" />
+      <workItem from="1616437466351" duration="4640000" />
     </task>
     <servers />
   </component>
