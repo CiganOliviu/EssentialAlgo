@@ -25,7 +25,15 @@ namespace ESharp.ESharpSourceCode.IOConsole
 
         public IAbstractMatrix ReadMatrix(int lines, int columns)
         {
-            throw new NotImplementedException();
+            var matrix = MatrixFactoryObject.GetMatrixObject();
+            matrix.SetLineOfMatrix(lines);
+            matrix.SetColumnOfMatrix(columns);
+
+            for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
+                    matrix.GetMatrix()[it, jit] = Convert.ToInt32(Console.ReadLine());
+
+            return matrix;
         }
 
         public void OutputMatrix(IAbstractMatrix matrix)
