@@ -1,4 +1,5 @@
-﻿using ESharp.DataStructures.Matrix;
+﻿using System;
+using ESharp.DataStructures.Matrix;
 using ESharp.DataStructures.OneDimensionalArray;
 
 namespace ESharp.ESharpSourceCode.IOConsole
@@ -7,7 +8,13 @@ namespace ESharp.ESharpSourceCode.IOConsole
     {
         public IAbstractOneDimensionalArrayObject ReadOneDimensionalArray(int size)
         {
-            throw new System.NotImplementedException();
+            var array = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            array.SetLengthOfOneDimensionalArray(size);
+
+            for (var it = 0; it < size; it++)
+                array.GetOneDimensionalArray()[it] = Convert.ToInt32(Console.ReadLine());
+
+            return array;
         }
 
         public void OutputOneDimensionalArray(IAbstractOneDimensionalArrayObject array)
