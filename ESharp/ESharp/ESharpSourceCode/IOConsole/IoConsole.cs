@@ -38,7 +38,9 @@ namespace ESharp.ESharpSourceCode.IOConsole
 
         public void OutputMatrix(IAbstractMatrix matrix)
         {
-            throw new NotImplementedException();
+            for (var it = 0; it < matrix.GetLineOfMatrix(); it++)
+                for (var jit = 0; jit < matrix.GetColumnOfMatrix(); jit++)
+                    Console.Write(matrix.GetMatrix()[it, jit] + " ");
         }
     }
 }
