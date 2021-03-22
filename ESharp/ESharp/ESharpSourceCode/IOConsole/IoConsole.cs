@@ -19,17 +19,18 @@ namespace ESharp.ESharpSourceCode.IOConsole
 
         public void OutputOneDimensionalArray(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                Console.Write(array.GetOneDimensionalArray()[it] + " ");
         }
 
         public IAbstractMatrix ReadMatrix(int lines, int columns)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void OutputMatrix(IAbstractMatrix matrix)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }
