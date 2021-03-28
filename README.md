@@ -68,6 +68,7 @@ Function Description through tests
     Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumberRecursive(7) == 5040);
     Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumberRecursive(0) == 1);
 ```
+
 ### Get Fibonacci Number Recursive
 
 Method Definition
@@ -75,6 +76,13 @@ Method Definition
     int GetFibonacciNumberRecursive(int factor);
 ```
 * Get Fibonacci number but recursively. 
+
+Function Description through tests
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumberRecursive(10) == 55);
+    Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumberRecursive(14) == 377);
+    Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumberRecursive(1) == 1);
+```
 
 ### Get Fibonacci Number
 
