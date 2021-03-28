@@ -340,11 +340,17 @@ namespace ESharp.ESharpSourceCode.NumbersPropertiesVerifier
 
 ### Is Prime
 ```
+bool IsPrime(int number);
 ```
 
 Function Description through tests
 
 ```
+Assert.IsTrue(_numbersPropertiesVerifier.IsPrime(13));
+Assert.IsFalse(_numbersPropertiesVerifier.IsPrime(16));
+Assert.IsTrue(_numbersPropertiesVerifier.IsPrime(31));
+Assert.IsFalse(_numbersPropertiesVerifier.IsPrime(6));
+Assert.IsFalse(_numbersPropertiesVerifier.IsPrime(21));
 ```
 
 ### Is Odd
