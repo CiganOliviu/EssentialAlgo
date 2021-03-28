@@ -30,6 +30,12 @@ Method Definition
 ```
     int GetGaussSum(int factor);
 ```
-* Get the gaussian sum
+* Get the gaussian sum.
 
-### 
+### Get Factorial Number
+
+Method Definition
+```
+    int GetFactorialNumber(int factor)
+```
+* Get Factorial value. 
