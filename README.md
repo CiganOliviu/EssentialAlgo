@@ -370,11 +370,17 @@ Assert.IsTrue(_numbersPropertiesVerifier.IsOdd(3));
 
 ### Is Even
 ```
+bool IsEven(int number);
 ```
 
 Function Description through tests
 
 ```
+Assert.IsTrue(_numbersPropertiesVerifier.IsEven(13));
+Assert.IsTrue(_numbersPropertiesVerifier.IsEven(17));
+Assert.IsFalse(_numbersPropertiesVerifier.IsEven(22));
+Assert.IsFalse(_numbersPropertiesVerifier.IsEven(2));
+Assert.IsTrue(_numbersPropertiesVerifier.IsEven(3));
 ```
 
 ### Is Palindrome
