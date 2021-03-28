@@ -177,6 +177,20 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 ```
 
 ### Get the largest common divisor
+```
+    int GetTheLargestCommonDivisor(int inferiorLimit, int superiorLimit);
+```
+* Get the Catalan Number
+
+Function Description through tests
+
+```
+    Assert.IsTrue(_numbersAlgorithms.GetTheLargestCommonDivisor(8, 12) == 4);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLargestCommonDivisor(1, 2) == 1);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLargestCommonDivisor(36, 69) == 3);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLargestCommonDivisor(100, 50) == 50);
+```
+
 ### Get the largest common divisor recursively
 ### Get the least common multiple
 ### Get value if prime
