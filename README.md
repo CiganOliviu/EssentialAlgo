@@ -239,6 +239,20 @@ Function Description through tests
 
 ### Get Palindrome number
 ```
+    int GetPalindromeNumber(int factor);
+```
+
+Function Description through tests
+
+```
+    Assert.IsTrue(_numbersAlgorithms.GetPalindromeNumber(121) == 121);
+    Assert.IsTrue(_numbersAlgorithms.GetPalindromeNumber(25) == 0);
+    Assert.IsTrue(_numbersAlgorithms.GetPalindromeNumber(1369895) == 0);
+    Assert.IsTrue(_numbersAlgorithms.GetPalindromeNumber(333) == 333);
+```
+
+### Get Mean of two numbers
+```
 
 ```
 
@@ -248,10 +262,35 @@ Function Description through tests
 
 ```
 
-### Get Mean of two numbers
-
 ### Interchange Variables Values
+```
+
+```
+
+Function Description through tests
+
+```
+
+```
 
 ### Get Digits Sum Of Number
+```
+
+```
+
+Function Description through tests
+
+```
+
+```
 
 ### Get Digits Product of Number
+```
+
+```
+
+Function Description through tests
+
+```
+
+```
