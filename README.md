@@ -33,6 +33,7 @@ Method Definition
 * Get the gaussian sum.
 
 Function Description through tests
+
 ```
     Assert.IsTrue(_fundamentalAlgorithms.GetGaussSum(6) == 21);
     Assert.IsTrue(_fundamentalAlgorithms.GetGaussSum(5) == 15);
@@ -48,6 +49,7 @@ Method Definition
 * Get Factorial value. 
 
 Function Description through tests
+
 ```
     Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumber(5) == 120);
     Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumber(7) == 5040);
@@ -63,6 +65,7 @@ Method Definition
 * Get Factorial value but recursively. 
 
 Function Description through tests
+
 ```
     Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumberRecursive(5) == 120);
     Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumberRecursive(7) == 5040);
@@ -78,6 +81,7 @@ Method Definition
 * Get Fibonacci number but recursively. 
 
 Function Description through tests
+
 ```
     Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumberRecursive(10) == 55);
     Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumberRecursive(14) == 377);
@@ -93,6 +97,7 @@ Method Definition
 * Get Fibonacci number. 
 
 Function Description through tests
+
 ```
     Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumber(10) == 55);
     Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumber(14) == 377);
@@ -107,17 +112,36 @@ Method Definition
 ```
 * Get the Manna Pnueli number. 
 
+Function Description through tests
+
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetMannaPnueliNumber(8) == 11);
+    Assert.IsTrue(_fundamentalAlgorithms.GetMannaPnueliNumber(15) == 14);
+```
+
 ### Get Ackerman Number
 ```
     int GetAckermanNumber(int inferiorLimit, int superiorLimit);
 ```
 * Get the Ackerman Number
 
+Function Description through tests
+
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetAckermanNumber(1, 2) == 4);
+```
+
 ### Get Euler Number
 ```
     int GetEulerNumber(int inferiorLimit, int superiorLimit);
 ```
 * Get the Euler Number
+
+Function Description through tests
+
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetEulerNumber(3, 1) == 4);
+```
 
 ### Get Catalan Number
 ```
