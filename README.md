@@ -77,3 +77,15 @@ Method Definition
     int GetAckermanNumber(int inferiorLimit, int superiorLimit);
 ```
 * Get the Ackerman Number
+
+### Get Euler Number
+```
+    int GetEulerNumber(int inferiorLimit, int superiorLimit);
+```
+* Get the Euler Number
+
+### Get Catalan Number
+```
+    int GetCatalanNumber(int factor);
+```
+* Get the Catalan Number
