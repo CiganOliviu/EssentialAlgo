@@ -92,6 +92,13 @@ Method Definition
 ```
 * Get Fibonacci number. 
 
+Function Description through tests
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumber(10) == 55);
+    Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumber(14) == 377);
+    Assert.IsTrue(_fundamentalAlgorithms.GetFibonacciNumber(1) == 1);
+```
+
 ### Get Manna Pnueli Number
 
 Method Definition
