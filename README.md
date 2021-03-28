@@ -148,3 +148,9 @@ Function Description through tests
     int GetCatalanNumber(int factor);
 ```
 * Get the Catalan Number
+
+Function Description through tests
+
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetCatalanNumber(3) == 5);
+```
