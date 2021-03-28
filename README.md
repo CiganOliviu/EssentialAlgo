@@ -47,6 +47,13 @@ Method Definition
 ```
 * Get Factorial value. 
 
+Function Description
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumber(5) == 120);
+    Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumber(7) == 5040);
+    Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumber(0) == 1);
+```
+
 ### Get Factorial Number Recursive
 
 Method Definition
