@@ -36,7 +36,7 @@ Method Definition
 
 Method Definition
 ```
-    int GetFactorialNumber(int factor)
+    int GetFactorialNumber(int factor);
 ```
 * Get Factorial value. 
 
@@ -44,6 +44,14 @@ Method Definition
 
 Method Definition
 ```
-    int GetFactorialNumberRecursive(int factor)
+    int GetFactorialNumberRecursive(int factor);
 ```
 * Get Factorial value but recursively. 
+
+### Get Fibonacci Number Recursive
+
+Method Definition
+```
+    int GetFibonacciNumberRecursive(int factor);
+```
+* Get Fibonacci number but recursively. 
