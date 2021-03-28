@@ -414,11 +414,16 @@ Assert.IsTrue(_numbersPropertiesVerifier.IsPerfectSquare(4));
 
 ### Is Fibonacci
 ```
+bool IsFibonacci(int number);
 ```
 
 Function Description through tests
 
 ```
+Assert.IsTrue(_numbersPropertiesVerifier.IsFibonacci(144));
+Assert.IsTrue(_numbersPropertiesVerifier.IsFibonacci(34));
+Assert.IsTrue(_numbersPropertiesVerifier.IsFibonacci(55));
+Assert.IsFalse(_numbersPropertiesVerifier.IsFibonacci(4));
 ```
 
 ### Is Factorial
