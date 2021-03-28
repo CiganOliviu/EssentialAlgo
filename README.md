@@ -253,13 +253,16 @@ Function Description through tests
 
 ### Get Mean of two numbers
 ```
-
+    float GetMeanOfTwoNumbers<T>(T firstNumber, T secondNumber);
 ```
 
 Function Description through tests
 
 ```
-
+    Assert.IsTrue(Math.Abs(_numbersAlgorithms.GetMeanOfTwoNumbers(121, 122) - 121.5) < 3);
+    Assert.IsTrue(Math.Abs(_numbersAlgorithms.GetMeanOfTwoNumbers(123, 432) - 277.5) < 3);
+    Assert.IsTrue(Math.Abs(_numbersAlgorithms.GetMeanOfTwoNumbers(213123, 1369895) - 791509) < 3);
+    Assert.IsTrue(Math.Abs(_numbersAlgorithms.GetMeanOfTwoNumbers(333, 2) - 167.5) < 3);
 ```
 
 ### Interchange Variables Values
