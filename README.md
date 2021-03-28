@@ -55,3 +55,11 @@ Method Definition
     int GetFibonacciNumberRecursive(int factor);
 ```
 * Get Fibonacci number but recursively. 
+
+### Get Fibonacci Number
+
+Method Definition
+```
+    int GetFibonacciNumber(int factor);
+```
+* Get Fibonacci number. 
