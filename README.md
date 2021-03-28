@@ -192,6 +192,20 @@ Function Description through tests
 ```
 
 ### Get the largest common divisor recursively
+```
+    int GetTheLargestCommonDivisorRecursive(int inferiorLimit, int superiorLimit);
+```
+* Get the Catalan Number
+
+Function Description through tests
+
+```
+    Assert.IsTrue(_numbersAlgorithms.GetTheLargestCommonDivisorRecursive(8, 12) == 4);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLargestCommonDivisorRecursive(1, 2) == 1);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLargestCommonDivisorRecursive(36, 69) == 3);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLargestCommonDivisorRecursive(100, 50) == 50);
+```
+
 ### Get the least common multiple
 ### Get value if prime
 ### Reverse number
