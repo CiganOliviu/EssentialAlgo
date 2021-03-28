@@ -210,6 +210,19 @@ Function Description through tests
 ```
 
 ### Get value if prime
+```
+    int GetValueIfPrime(int factor);
+```
+
+Function Description through tests
+
+```
+    Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(12) == 0);
+    Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(25) == 0);
+    Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(13) == 13);
+    Assert.IsTrue(_numbersAlgorithms.GetValueIfPrime(23) == 23);  
+```
+
 ### Reverse number
 ### Get Palindrome number
 ### Get Mean of two numbers
