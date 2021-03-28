@@ -294,13 +294,16 @@ Assert.IsTrue(Math.Abs(firstDoubleVariable - 123.32) < 2 && Math.Abs(secondDoubl
 
 ### Get Digits Sum Of Number
 ```
-
+int GetDigitsSumOfNumber(int number);
 ```
 
 Function Description through tests
 
 ```
-
+Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(121) == 4);
+Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(25) == 7);
+Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(1369895) == 41);
+Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(333) == 9);
 ```
 
 ### Get Digits Product of Number
