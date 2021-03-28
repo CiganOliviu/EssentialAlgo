@@ -71,3 +71,9 @@ Method Definition
     int GetMannaPnueliNumber(int factor);
 ```
 * Get the Manna Pnueli number. 
+
+### Get Ackerman Number
+```
+    int GetAckermanNumber(int inferiorLimit, int superiorLimit);
+```
+* Get the Ackerman Number
