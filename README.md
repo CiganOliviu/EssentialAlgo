@@ -30,7 +30,6 @@ Method Definition
 ```
     int GetGaussSum(int factor);
 ```
-* Get the gaussian sum.
 
 Function Description through tests
 
@@ -46,7 +45,6 @@ Method Definition
 ```
     int GetFactorialNumber(int factor);
 ```
-* Get Factorial value. 
 
 Function Description through tests
 
@@ -62,7 +60,6 @@ Method Definition
 ```
     int GetFactorialNumberRecursive(int factor);
 ```
-* Get Factorial value but recursively. 
 
 Function Description through tests
 
@@ -78,7 +75,6 @@ Method Definition
 ```
     int GetFibonacciNumberRecursive(int factor);
 ```
-* Get Fibonacci number but recursively. 
 
 Function Description through tests
 
@@ -94,7 +90,6 @@ Method Definition
 ```
     int GetFibonacciNumber(int factor);
 ```
-* Get Fibonacci number. 
 
 Function Description through tests
 
@@ -110,7 +105,6 @@ Method Definition
 ```
     int GetMannaPnueliNumber(int factor);
 ```
-* Get the Manna Pnueli number. 
 
 Function Description through tests
 
@@ -123,7 +117,6 @@ Function Description through tests
 ```
     int GetAckermanNumber(int inferiorLimit, int superiorLimit);
 ```
-* Get the Ackerman Number
 
 Function Description through tests
 
@@ -135,7 +128,6 @@ Function Description through tests
 ```
     int GetEulerNumber(int inferiorLimit, int superiorLimit);
 ```
-* Get the Euler Number
 
 Function Description through tests
 
@@ -147,7 +139,6 @@ Function Description through tests
 ```
     int GetCatalanNumber(int factor);
 ```
-* Get the Catalan Number
 
 Function Description through tests
 
@@ -180,7 +171,6 @@ namespace ESharp.ESharpSourceCode.NumbersAlgorithms
 ```
     int GetTheLargestCommonDivisor(int inferiorLimit, int superiorLimit);
 ```
-* Get the Catalan Number
 
 Function Description through tests
 
@@ -195,7 +185,6 @@ Function Description through tests
 ```
     int GetTheLargestCommonDivisorRecursive(int inferiorLimit, int superiorLimit);
 ```
-* Get the Catalan Number
 
 Function Description through tests
 
@@ -207,6 +196,19 @@ Function Description through tests
 ```
 
 ### Get the least common multiple
+```
+    int GetTheLeastCommonMultiple(int inferiorLimit, int superiorLimit);
+```
+
+Function Description through tests
+
+```
+    Assert.IsTrue(_numbersAlgorithms.GetTheLeastCommonMultiple(8, 12) == 24);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLeastCommonMultiple(1, 2) == 2);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLeastCommonMultiple(200, 324) == 16200);
+    Assert.IsTrue(_numbersAlgorithms.GetTheLeastCommonMultiple(100, 50) == 100);
+```
+
 ### Get value if prime
 ### Reverse number
 ### Get Palindrome number
