@@ -32,7 +32,7 @@ Method Definition
 ```
 * Get the gaussian sum.
 
-Function Description
+Function Description through tests
 ```
     Assert.IsTrue(_fundamentalAlgorithms.GetGaussSum(6) == 21);
     Assert.IsTrue(_fundamentalAlgorithms.GetGaussSum(5) == 15);
@@ -47,7 +47,7 @@ Method Definition
 ```
 * Get Factorial value. 
 
-Function Description
+Function Description through tests
 ```
     Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumber(5) == 120);
     Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumber(7) == 5040);
@@ -62,6 +62,12 @@ Method Definition
 ```
 * Get Factorial value but recursively. 
 
+Function Description through tests
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumberRecursive(5) == 120);
+    Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumberRecursive(7) == 5040);
+    Assert.IsTrue(_fundamentalAlgorithms.GetFactorialNumberRecursive(0) == 1);
+```
 ### Get Fibonacci Number Recursive
 
 Method Definition
