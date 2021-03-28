@@ -308,11 +308,14 @@ Assert.IsTrue(_numbersAlgorithms.GetDigitsSumOfNumber(333) == 9);
 
 ### Get Digits Product of Number
 ```
-
+int GetDigitsProductOfNumber(int number);
 ```
 
 Function Description through tests
 
 ```
-
+Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(121) == 2);
+Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(25) == 10);
+Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(1369895) == 58320);
+Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(333) == 27);
 ```
