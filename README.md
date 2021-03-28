@@ -154,3 +154,35 @@ Function Description through tests
 ```
     Assert.IsTrue(_fundamentalAlgorithms.GetCatalanNumber(3) == 5);
 ```
+
+## NumbersAlgorithms
+
+```
+namespace ESharp.ESharpSourceCode.NumbersAlgorithms
+{
+    public interface IAbstractNumbersAlgorithms
+    {
+        int GetTheLargestCommonDivisor(int inferiorLimit, int superiorLimit);
+        int GetTheLargestCommonDivisorRecursive(int inferiorLimit, int superiorLimit);
+        int GetTheLeastCommonMultiple(int inferiorLimit, int superiorLimit);
+        int GetValueIfPrime(int factor);
+        int ReverseNumber(int number);
+        int GetPalindromeNumber(int factor);
+        float GetMeanOfTwoNumbers<T>(T firstNumber, T secondNumber);
+        void InterchangeVariablesValues<T>(ref T firstVariable, ref T secondVariable);
+        int GetDigitsSumOfNumber(int number);
+        int GetDigitsProductOfNumber(int number);
+    }
+}
+```
+
+### Get the largest common divisor
+### Get the largest common divisor recursively
+### Get the least common multiple
+### Get value if prime
+### Reverse number
+### Get Palindrome number
+### Get Mean of two numbers
+### Interchange Variables Values
+### Get Digits Sum Of Number
+### Get Digits Product of Number
