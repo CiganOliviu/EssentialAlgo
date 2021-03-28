@@ -319,3 +319,84 @@ Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(25) == 10);
 Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(1369895) == 58320);
 Assert.IsTrue(_numbersAlgorithms.GetDigitsProductOfNumber(333) == 27);
 ```
+
+## Numbers Properties Verifier
+
+```
+namespace ESharp.ESharpSourceCode.NumbersPropertiesVerifier
+{
+    public interface IAbstractNumbersPropertiesVerifier
+    {
+        bool IsPrime(int number);
+        bool IsOdd(int number);
+        bool IsEven(int number);
+        bool IsPalindrome(int number);
+        bool IsPerfectSquare(int number);
+        bool IsFibonacci(int number);
+        bool IsFactorial(int number);
+    }
+}
+```
+
+### Is Prime
+```
+```
+
+Function Description through tests
+
+```
+```
+
+### Is Odd
+```
+```
+
+Function Description through tests
+
+```
+```
+
+### Is Even
+```
+```
+
+Function Description through tests
+
+```
+```
+
+### Is Palindrome
+```
+```
+
+Function Description through tests
+
+```
+```
+
+### Is Perfect Square
+```
+```
+
+Function Description through tests
+
+```
+```
+
+### Is Fibonacci
+```
+```
+
+Function Description through tests
+
+```
+```
+
+### Is Factorial
+```
+```
+
+Function Description through tests
+
+```
+```
