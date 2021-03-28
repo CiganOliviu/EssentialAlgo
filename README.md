@@ -23,3 +23,13 @@ namespace ESharp.ESharpSourceCode.FundamentalAlgorithms
     }
 }
 ```
+
+### Get Gauss Sum
+
+Method Definition
+```
+    int GetGaussSum(int factor);
+```
+* Get the gaussian sum
+
+### 
