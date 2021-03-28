@@ -39,3 +39,11 @@ Method Definition
     int GetFactorialNumber(int factor)
 ```
 * Get Factorial value. 
+
+### Get Factorial Number Recursive
+
+Method Definition
+```
+    int GetFactorialNumberRecursive(int factor)
+```
+* Get Factorial value but recursively. 
