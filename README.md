@@ -428,9 +428,14 @@ Assert.IsFalse(_numbersPropertiesVerifier.IsFibonacci(4));
 
 ### Is Factorial
 ```
+bool IsFactorial(int number);
 ```
 
 Function Description through tests
 
 ```
+Assert.IsTrue(_numbersPropertiesVerifier.IsFactorial(120));
+Assert.IsTrue(_numbersPropertiesVerifier.IsFactorial(24));
+Assert.IsTrue(_numbersPropertiesVerifier.IsFactorial(5040));
+Assert.IsFalse(_numbersPropertiesVerifier.IsFactorial(7));
 ```
