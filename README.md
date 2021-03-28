@@ -385,11 +385,17 @@ Assert.IsTrue(_numbersPropertiesVerifier.IsEven(3));
 
 ### Is Palindrome
 ```
+bool IsPalindrome(int number);
 ```
 
 Function Description through tests
 
 ```
+Assert.IsTrue(_numbersPropertiesVerifier.IsPalindrome(131));
+Assert.IsFalse(_numbersPropertiesVerifier.IsPalindrome(123));
+Assert.IsFalse(_numbersPropertiesVerifier.IsPalindrome(1234));
+Assert.IsTrue(_numbersPropertiesVerifier.IsPalindrome(1));
+Assert.IsTrue(_numbersPropertiesVerifier.IsPalindrome(99));
 ```
 
 ### Is Perfect Square
