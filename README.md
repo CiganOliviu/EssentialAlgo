@@ -224,8 +224,34 @@ Function Description through tests
 ```
 
 ### Reverse number
+```
+    int ReverseNumber(int number);
+```
+
+Function Description through tests
+
+```
+    Assert.IsTrue(_numbersAlgorithms.ReverseNumber(12) == 21);
+    Assert.IsTrue(_numbersAlgorithms.ReverseNumber(25) == 52);
+    Assert.IsTrue(_numbersAlgorithms.ReverseNumber(1369895) == 5989631);
+    Assert.IsTrue(_numbersAlgorithms.ReverseNumber(333) == 333);
+```
+
 ### Get Palindrome number
+```
+
+```
+
+Function Description through tests
+
+```
+
+```
+
 ### Get Mean of two numbers
+
 ### Interchange Variables Values
+
 ### Get Digits Sum Of Number
+
 ### Get Digits Product of Number
