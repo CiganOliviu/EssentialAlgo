@@ -355,11 +355,17 @@ Assert.IsFalse(_numbersPropertiesVerifier.IsPrime(21));
 
 ### Is Odd
 ```
+bool IsOdd(int number);
 ```
 
 Function Description through tests
 
 ```
+Assert.IsTrue(_numbersPropertiesVerifier.IsOdd(13));
+Assert.IsTrue(_numbersPropertiesVerifier.IsOdd(17));
+Assert.IsFalse(_numbersPropertiesVerifier.IsOdd(22));
+Assert.IsFalse(_numbersPropertiesVerifier.IsOdd(2));
+Assert.IsTrue(_numbersPropertiesVerifier.IsOdd(3));
 ```
 
 ### Is Even
