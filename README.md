@@ -32,6 +32,13 @@ Method Definition
 ```
 * Get the gaussian sum.
 
+Function Description
+```
+    Assert.IsTrue(_fundamentalAlgorithms.GetGaussSum(6) == 21);
+    Assert.IsTrue(_fundamentalAlgorithms.GetGaussSum(5) == 15);
+    Assert.IsTrue(_fundamentalAlgorithms.GetGaussSum(1) == 1);
+```
+
 ### Get Factorial Number
 
 Method Definition
