@@ -63,3 +63,11 @@ Method Definition
     int GetFibonacciNumber(int factor);
 ```
 * Get Fibonacci number. 
+
+### Get Manna Pnueli Number
+
+Method Definition
+```
+    int GetMannaPnueliNumber(int factor);
+```
+* Get the Manna Pnueli number. 
