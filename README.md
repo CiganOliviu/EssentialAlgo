@@ -400,11 +400,16 @@ Assert.IsTrue(_numbersPropertiesVerifier.IsPalindrome(99));
 
 ### Is Perfect Square
 ```
+bool IsPerfectSquare(int number);
 ```
 
 Function Description through tests
 
 ```
+Assert.IsTrue(_numbersPropertiesVerifier.IsPerfectSquare(144));
+Assert.IsFalse(_numbersPropertiesVerifier.IsPerfectSquare(123));
+Assert.IsTrue(_numbersPropertiesVerifier.IsPerfectSquare(169));
+Assert.IsTrue(_numbersPropertiesVerifier.IsPerfectSquare(4));
 ```
 
 ### Is Fibonacci
