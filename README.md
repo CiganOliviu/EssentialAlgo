@@ -564,3 +564,21 @@ Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsDifference(_oneDimen
 _oneDimensionalArray.SetOneDimensionalArray(new []{1, 122, -33, 0, 345});
 Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsDifference(_oneDimensionalArray) == -433);
 ```
+
+### Get Array Elements Division
+```
+float GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsDivision(_oneDimensionalArray) - 0.0083) < 2);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-11, 2, -4, -10, 12});
+Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsDivision(_oneDimensionalArray) - (-1.65)) < 2);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{345, 1, 2, 7});
+Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsDivision(_oneDimensionalArray) - 24.64) < 2);
+```
