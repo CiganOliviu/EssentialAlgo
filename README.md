@@ -582,3 +582,21 @@ Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsDivision(_o
 _oneDimensionalArray.SetOneDimensionalArray(new []{345, 1, 2, 7});
 Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsDivision(_oneDimensionalArray) - 24.64) < 2);
 ```
+
+### Get Array Elements Mean
+```
+float GetArrayElementsMean(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsMean(_oneDimensionalArray) - 3) < 2);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-11, 2, -4, -10, 12});
+Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsMean(_oneDimensionalArray) - (-2.2)) < 2);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{345, 1, 2, 7});
+Assert.IsTrue(Math.Abs(_oneDimensionalArraysWorkflow.GetArrayElementsMean(_oneDimensionalArray) - 88.75) < 2);
+```
