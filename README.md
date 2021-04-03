@@ -657,3 +657,16 @@ Assert.IsTrue(_oneDimensionalArraysWorkflow.IsValueInArray(_oneDimensionalArray,
 _oneDimensionalArray.SetOneDimensionalArray(new []{1, 122, -33, 0, 345});
 Assert.IsTrue(_oneDimensionalArraysWorkflow.IsValueInArray(_oneDimensionalArray, 345));
 ```
+
+### Convert Number To Array
+```
+int[] ConvertNumberToArray(int number);
+```
+
+Function Description through tests
+
+```
+Assert.AreEqual(_oneDimensionalArraysWorkflow.ConvertNumberToArray(345) , new []{3, 4, 5});
+Assert.AreEqual(_oneDimensionalArraysWorkflow.ConvertNumberToArray(12345), new []{1, 2, 3, 4, 5});
+Assert.AreEqual(_oneDimensionalArraysWorkflow.ConvertNumberToArray(963), new []{9, 6, 3});
+```
