@@ -492,3 +492,21 @@ Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMinimumValueFromArray(_oneDimensi
 _oneDimensionalArray.SetOneDimensionalArray(new []{-3241, 122, -33, 544, 345});
 Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMinimumValueFromArray(_oneDimensionalArray) == -3241);
 ```
+
+### Get Maximum Value From Array
+```
+int GetMaximumValueFromArray(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMaximumValueFromArray(_oneDimensionalArray) == 5);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-11, -232, -43, -54, -95});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMaximumValueFromArray(_oneDimensionalArray) == -11);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-3241, 122, -33, 544, 345});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMaximumValueFromArray(_oneDimensionalArray) == 544);
+```
