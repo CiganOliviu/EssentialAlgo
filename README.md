@@ -528,3 +528,21 @@ Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsSum(_oneDimensionalA
 _oneDimensionalArray.SetOneDimensionalArray(new []{-3241, 122, -33, 544, 345});
 Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsSum(_oneDimensionalArray) == -2263);
 ```
+
+### Get Array Elements Product
+```
+int GetArrayElementsProduct(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsProduct(_oneDimensionalArray) == 120);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-11, 2, -4, -10, 12});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsProduct(_oneDimensionalArray) == -10560);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 122, -33, 0, 345});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsProduct(_oneDimensionalArray) == 0);
+```
