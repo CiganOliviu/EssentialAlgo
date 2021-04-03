@@ -639,3 +639,21 @@ Assert.AreEqual(_oneDimensionalArraysWorkflow.AddValueInArray(_oneDimensionalArr
         GetOneDimensionalArray()
 , new []{-5, -3, -1, -69});
 ```
+
+### Is Value In Array
+```
+bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.IsValueInArray(_oneDimensionalArray, 5));
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-11, 2, -4, -10, 12});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.IsValueInArray(_oneDimensionalArray, 0) == false);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 122, -33, 0, 345});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.IsValueInArray(_oneDimensionalArray, 345));
+```
