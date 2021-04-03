@@ -618,3 +618,24 @@ Assert.IsTrue(_oneDimensionalArraysWorkflow.IsArraySymmetric(_oneDimensionalArra
 _oneDimensionalArray.SetOneDimensionalArray(new []{-101, -222, -222, -101});
 Assert.IsTrue(_oneDimensionalArraysWorkflow.IsArraySymmetric(_oneDimensionalArray));
 ```
+
+### Add Value In Array
+```
+IAbstractOneDimensionalArrayObject AddValueInArray(IAbstractOneDimensionalArrayObject array, int value);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+
+Assert.AreEqual(_oneDimensionalArraysWorkflow.AddValueInArray(_oneDimensionalArray ,13).
+        GetOneDimensionalArray(),
+    new []{1, 2, 3, 4, 5, 13});  
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-5, -3, -1});
+
+Assert.AreEqual(_oneDimensionalArraysWorkflow.AddValueInArray(_oneDimensionalArray, -69).
+        GetOneDimensionalArray()
+, new []{-5, -3, -1, -69});
+```
