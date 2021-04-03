@@ -510,3 +510,21 @@ Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMaximumValueFromArray(_oneDimensi
 _oneDimensionalArray.SetOneDimensionalArray(new []{-3241, 122, -33, 544, 345});
 Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMaximumValueFromArray(_oneDimensionalArray) == 544);
 ```
+
+### Get Array Elements Sum
+```
+int GetArrayElementsSum(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsSum(_oneDimensionalArray) == 15);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-11, -232, -43, -54, -95});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsSum(_oneDimensionalArray) == -435);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-3241, 122, -33, 544, 345});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetArrayElementsSum(_oneDimensionalArray) == -2263);
+```
