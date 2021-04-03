@@ -439,3 +439,56 @@ Assert.IsTrue(_numbersPropertiesVerifier.IsFactorial(24));
 Assert.IsTrue(_numbersPropertiesVerifier.IsFactorial(5040));
 Assert.IsFalse(_numbersPropertiesVerifier.IsFactorial(7));
 ```
+
+## One Dimensional Array Workflow
+
+```
+namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
+{
+    public interface IAbstractOneDimensionalArraysWorkflow
+    {
+        int GetMinimumValueFromArray(IAbstractOneDimensionalArrayObject array);
+        int GetMaximumValueFromArray(IAbstractOneDimensionalArrayObject array);
+        int GetArrayElementsSum(IAbstractOneDimensionalArrayObject array);
+        int GetArrayElementsProduct(IAbstractOneDimensionalArrayObject array);
+        int GetArrayElementsDifference(IAbstractOneDimensionalArrayObject array);
+        float GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array);
+        float GetArrayElementsMean(IAbstractOneDimensionalArrayObject array);
+        bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array);
+        IAbstractOneDimensionalArrayObject AddValueInArray(IAbstractOneDimensionalArrayObject array, int value);
+        bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value);
+        int[] ConvertNumberToArray(int number);
+        int ConvertArrayToNumber(int[] array);
+        IAbstractOneDimensionalArrayObject BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster);
+        IAbstractOneDimensionalArrayObject BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster);
+        IAbstractOneDimensionalArrayObject GetArraysSum(IAbstractOneDimensionalArrayObject arrayOne,
+                                                        IAbstractOneDimensionalArrayObject arrayTwo);
+        IAbstractOneDimensionalArrayObject GetArraysProduct(IAbstractOneDimensionalArrayObject arrayOne,
+                                                            IAbstractOneDimensionalArrayObject arrayTwo);
+        IAbstractOneDimensionalArrayObject GetArraysDifference(IAbstractOneDimensionalArrayObject arrayOne, 
+                                                                IAbstractOneDimensionalArrayObject arrayTwo);
+        IAbstractOneDimensionalArrayObject GetArraysDivision(IAbstractOneDimensionalArrayObject arrayOne,
+                                                            IAbstractOneDimensionalArrayObject arrayTwo);
+        bool AreArraysEqual(IAbstractOneDimensionalArrayObject arrayOne, IAbstractOneDimensionalArrayObject arrayTwo);
+        void SortArray(IAbstractOneDimensionalArrayObject array);
+    }
+}
+```
+
+### Get Minimum Value From Array
+```
+int GetMinimumValueFromArray(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMinimumValueFromArray(_oneDimensionalArray) == 1);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-11, -232, -43, -54, -95});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMinimumValueFromArray(_oneDimensionalArray) == -232);
+
+_oneDimensionalArray.SetOneDimensionalArray(new []{-3241, 122, -33, 544, 345});
+Assert.IsTrue(_oneDimensionalArraysWorkflow.GetMinimumValueFromArray(_oneDimensionalArray) == -3241);
+```
