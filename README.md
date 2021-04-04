@@ -954,3 +954,16 @@ var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
 
 Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
 ```
+
+### LinearSearchValue
+```
+bool LinearSearchValue(IAbstractOneDimensionalArrayObject array, int valueToSearch);
+```
+
+Function Description through tests
+
+```
+_array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+
+Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.LinearSearchValue(_array, 2));
+```

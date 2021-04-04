@@ -78,8 +78,7 @@ namespace TestESharp
         {
             _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
             
-            Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.LinearSearchValue(_array, 2));
-            
+            Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.LinearSearchValue(_array, 2));    
         }
         
         [Test]
