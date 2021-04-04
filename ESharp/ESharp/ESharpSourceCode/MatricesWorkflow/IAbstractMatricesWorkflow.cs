@@ -27,3 +27,4 @@ namespace ESharp.ESharpSourceCode.MatricesWorkflow
         int[] GetWestElementsFromMatrix(IAbstractMatrix matrix);
     }
 }
+
