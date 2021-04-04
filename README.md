@@ -922,3 +922,19 @@ var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
 
 Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
 ```
+
+### SelectionSort
+```
+void SelectionSort(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+_specialOneDimensionalArrayAlgorithms.SelectionSort(_array);
+
+var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
+
+Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
+```
