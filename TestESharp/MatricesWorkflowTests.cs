@@ -250,7 +250,6 @@ namespace TestESharp
             var expected = new [] {8};
             
             Assert.AreEqual(_matricesWorkflow.GetSouthElementsFromMatrix(_matrix), expected);
-
         }
 
         [Test]
@@ -263,7 +262,6 @@ namespace TestESharp
             var expected = new [] {6};
             
             Assert.AreEqual(_matricesWorkflow.GetEastElementsFromMatrix(_matrix), expected);
-
         }
         
         [Test]
@@ -276,7 +274,6 @@ namespace TestESharp
             var expected = new [] {4};
             
             Assert.AreEqual(_matricesWorkflow.GetWestElementsFromMatrix(_matrix), expected);
-
         }
     }
 }

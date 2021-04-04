@@ -1347,6 +1347,23 @@ var expected = new [] {8};
 Assert.AreEqual(_matricesWorkflow.GetSouthElementsFromMatrix(_matrix), expected);
 ```
 
+### GetEastElementsFromMatrix
+```
+int[] GetEastElementsFromMatrix(IAbstractMatrix matrix);
+```
+
+Function Description through tests
+
+```
+_matrix.SetLineOfMatrix(3);
+_matrix.SetColumnOfMatrix(3);
+_matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+var expected = new [] {6};
+
+Assert.AreEqual(_matricesWorkflow.GetEastElementsFromMatrix(_matrix), expected);
+```
+
 ## IOConsole
 
 ```
