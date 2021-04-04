@@ -1414,6 +1414,50 @@ public void Test_GetOneDimensionalArray_()
 }
 ```
 
+## Matrix
+
+```
+namespace ESharp.DataStructures.Matrix
+{
+    public interface IAbstractMatrix
+    {
+        int GetLineOfMatrix();
+        void SetLineOfMatrix(int line);
+
+        int GetColumnOfMatrix();
+        void SetColumnOfMatrix(int column);
+
+        int[, ] GetMatrix();
+        void SetMatrix(int[, ] matrix);
+    }
+}
+```
+
+Data Structure Description through tests
+
+```
+[Test]
+public void Test_GetLineOfMatrix_()
+{
+    _matrix.SetLineOfMatrix(3);
+    Assert.IsTrue(_matrix.GetLineOfMatrix() == 3);
+}
+
+[Test]
+public void Test_GetColumnOfMatrix_()
+{
+    _matrix.SetColumnOfMatrix(3);
+    Assert.IsTrue(_matrix.GetColumnOfMatrix() == 3);
+}
+
+[Test]
+public void Test_GetMatrix_()
+{
+    _matrix.SetMatrix(new int[, ] { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} });
+    Assert.IsTrue(_matrix.GetMatrix().Cast<int>().SequenceEqual(new int[, ] { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }.Cast<int>()));
+}
+```
+
 ## IOConsole
 
 ```
