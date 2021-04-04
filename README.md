@@ -1163,6 +1163,30 @@ Assert.AreEqual(_matricesWorkflow.GetMatricesSum(firstMatrix,secondMatrix).GetMa
     expected);
 ```
 
+### GetMatricesDifference
+```
+IAbstractMatrix GetMatricesDifference(IAbstractMatrix matrixOne, IAbstractMatrix matrixTwo);
+```
+
+Function Description through tests
+
+```
+var firstMatrix = MatrixFactoryObject.GetMatrixObject();
+firstMatrix.SetLineOfMatrix(3);
+firstMatrix.SetColumnOfMatrix(3);
+firstMatrix.SetMatrix(new [, ]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+var secondMatrix = MatrixFactoryObject.GetMatrixObject();
+secondMatrix.SetLineOfMatrix(3);
+secondMatrix.SetColumnOfMatrix(3);
+secondMatrix.SetMatrix(new [, ]{{7, 8, 9}, {4, 5, 6}, {1, 2, 3}});
+
+var expected = new[,] {{-6, -6, -6}, {0, 0, 0}, {6, 6, 6}};
+
+Assert.AreEqual(_matricesWorkflow.GetMatricesDifference(firstMatrix,secondMatrix).GetMatrix(),
+    expected);
+```
+
 ## IOConsole
 
 ```
