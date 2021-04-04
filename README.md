@@ -967,3 +967,18 @@ _array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
 
 Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.LinearSearchValue(_array, 2));
 ```
+
+### BinarySearchValue
+```
+bool BinarySearchValue(IAbstractOneDimensionalArrayObject array, int valueToSearch);
+```
+
+Function Description through tests
+
+```
+_array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+
+_specialOneDimensionalArrayAlgorithms.BubbleSort(_array);
+
+Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.BinarySearchValue(_array, 2));
+```
