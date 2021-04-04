@@ -1060,6 +1060,21 @@ _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
 Assert.IsTrue(_matricesWorkflow.GetMatrixElementsSum(_matrix) == 45);
 ```
 
+### GetMatrixElementsProduct
+```
+int GetMatrixElementsProduct(IAbstractMatrix matrix);
+```
+
+Function Description through tests
+
+```
+_matrix.SetLineOfMatrix(3);
+_matrix.SetColumnOfMatrix(3);
+_matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {0, 8, 9}});
+
+Assert.IsTrue(_matricesWorkflow.GetMatrixElementsProduct(_matrix) == 0);
+```
+
 ## IOConsole
 
 ```
