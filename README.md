@@ -1381,6 +1381,39 @@ var expected = new [] {4};
 Assert.AreEqual(_matricesWorkflow.GetWestElementsFromMatrix(_matrix), expected);
 ```
 
+## OneDimensionalArray
+
+```
+namespace ESharp.DataStructures.OneDimensionalArray
+{
+    public interface IAbstractOneDimensionalArrayObject
+    {
+        void SetLengthOfOneDimensionalArray(int length);
+        int GetLengthOfOneDimensionalArray();
+        int[] GetOneDimensionalArray();
+        void SetOneDimensionalArray(int[] array);
+    }
+}
+```
+
+Data Structure Description through tests
+
+```
+[Test]
+public void Test_GetLengthOfOneDimensionalArray_()
+{    
+    _oneDimensionalArray.SetOneDimensionalArray(new int[] {1, 2, 3, 4, 5});
+    Assert.IsTrue(_oneDimensionalArray.GetLengthOfOneDimensionalArray() == 5);
+}
+
+[Test]
+public void Test_GetOneDimensionalArray_()
+{
+    _oneDimensionalArray.SetOneDimensionalArray(new int[] {1, 2, 3, 4, 5});
+    Assert.IsTrue(_oneDimensionalArray.GetOneDimensionalArray().SequenceEqual(new int[] {1, 2, 3, 4, 5}));
+}
+```
+
 ## IOConsole
 
 ```
