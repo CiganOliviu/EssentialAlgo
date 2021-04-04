@@ -983,7 +983,52 @@ _specialOneDimensionalArrayAlgorithms.BubbleSort(_array);
 Assert.IsTrue(_specialOneDimensionalArrayAlgorithms.BinarySearchValue(_array, 2));
 ```
 
+## MatricesWorkflow
 
+```
+namespace ESharp.ESharpSourceCode.MatricesWorkflow
+{
+    public interface IAbstractMatricesWorkflow
+    {
+        int GetMaximumValueFromMatrix(IAbstractMatrix matrix);
+        int GetMinimumValueFromMatrix(IAbstractMatrix matrix);
+        int GetMatrixElementsSum(IAbstractMatrix matrix);
+        int GetMatrixElementsProduct(IAbstractMatrix matrix);
+        int GetMatrixElementsDifference(IAbstractMatrix matrix);
+        int GetMatrixElementsDivision(IAbstractMatrix matrix);
+        IAbstractMatrix BoostUpMatrix(IAbstractMatrix matrix, int booster);
+        IAbstractMatrix BoostDownMatrix(IAbstractMatrix matrix, int booster);
+        IAbstractMatrix GetMatricesSum(IAbstractMatrix matrixOne, IAbstractMatrix matrixTwo);
+        IAbstractMatrix GetMatricesDifference(IAbstractMatrix matrixOne, IAbstractMatrix matrixTwo);
+        IAbstractMatrix GetMatricesProduct(IAbstractMatrix matrixOne, IAbstractMatrix matrixTwo);
+        int[] GetMainDiagonalElementsFromMatrix(IAbstractMatrix matrix);
+        int[] GetElementsAboveMainDiagonalFromMatrix(IAbstractMatrix matrix);
+        int[] GetElementsUnderMainDiagonalFromMatrix(IAbstractMatrix matrix);
+        int[] GetSecondaryDiagonalElementsFromMatrix(IAbstractMatrix matrix);
+        int[] GetElementsAboveSecondaryDiagonalFromMatrix(IAbstractMatrix matrix);
+        int[] GetElementsUnderSecondaryDiagonalFromMatrix(IAbstractMatrix matrix);
+        int[] GetNorthElementsFromMatrix(IAbstractMatrix matrix);
+        int[] GetSouthElementsFromMatrix(IAbstractMatrix matrix);
+        int[] GetEastElementsFromMatrix(IAbstractMatrix matrix);
+        int[] GetWestElementsFromMatrix(IAbstractMatrix matrix);
+    }
+}
+```
+
+### GetMaximumValueFromMatrix
+```
+int GetMaximumValueFromMatrix(IAbstractMatrix matrix);
+```
+
+Function Description through tests
+
+```
+_matrix.SetLineOfMatrix(3);
+_matrix.SetColumnOfMatrix(3);
+_matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+Assert.IsTrue(_matricesWorkflow.GetMaximumValueFromMatrix(_matrix) == 9);
+```
 
 ## IOConsole
 
