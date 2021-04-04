@@ -1262,6 +1262,23 @@ var expected = new [] {2, 3, 6};
 Assert.AreEqual(_matricesWorkflow.GetElementsUnderMainDiagonalFromMatrix(_matrix), expected);
 ```
 
+### GetSecondaryDiagonalElementsFromMatrix
+```
+int[] GetSecondaryDiagonalElementsFromMatrix(IAbstractMatrix matrix);
+```
+
+Function Description through tests
+
+```
+_matrix.SetLineOfMatrix(3);
+_matrix.SetColumnOfMatrix(3);
+_matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+
+var expected = new [] {3, 5, 7};
+
+Assert.AreEqual(_matricesWorkflow.GetSecondaryDiagonalElementsFromMatrix(_matrix), expected);
+```
+
 ## IOConsole
 
 ```
