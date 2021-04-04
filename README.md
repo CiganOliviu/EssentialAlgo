@@ -735,6 +735,27 @@ Assert.AreEqual(_oneDimensionalArraysWorkflow.BoostDownArray(_oneDimensionalArra
         new []{32, 1, 2, 3, 4, 5});
 ```
 
+### Get Arrays Sum
+```
+IAbstractOneDimensionalArrayObject GetArraysSum(IAbstractOneDimensionalArrayObject arrayOne,
+                                                        IAbstractOneDimensionalArrayObject arrayTwo);
+```
+
+Function Description through tests
+
+```
+var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+arrayOne.SetOneDimensionalArray(new []{1, 2, 3, 4});
+
+var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+arrayTwo.SetOneDimensionalArray(new []{-1, -2, -3, -4});
+
+var result = _oneDimensionalArraysWorkflow.GetArraysSum(arrayOne, arrayTwo);
+var expected = new int[] {0, 0, 0, 0};
+
+Assert.AreEqual(result.GetOneDimensionalArray(), expected);
+```
+
 ### Get Arrays Product
 ```
 IAbstractOneDimensionalArrayObject GetArraysProduct(IAbstractOneDimensionalArrayObject arrayOne,
