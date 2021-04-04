@@ -818,3 +818,25 @@ var expected = new int[] {5, 7, 8, 4};
 
 Assert.AreEqual(result.GetOneDimensionalArray(), expected);
 ```
+
+### Are Arrays Equal
+```
+bool AreArraysEqual(IAbstractOneDimensionalArrayObject arrayOne, IAbstractOneDimensionalArrayObject arrayTwo);
+```
+
+Function Description through tests
+
+```
+var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+
+arrayOne.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+arrayTwo.SetOneDimensionalArray(new []{1, 2, 3, 4, 5});
+
+Assert.IsTrue(_oneDimensionalArraysWorkflow.AreArraysEqual(arrayOne, arrayTwo));
+
+arrayOne.SetOneDimensionalArray(new []{-1, 2, -3, 4, -5});
+arrayTwo.SetOneDimensionalArray(new []{-1, 2, -3, 4, -5});
+
+Assert.IsTrue(_oneDimensionalArraysWorkflow.AreArraysEqual(arrayOne, arrayTwo));
+```
