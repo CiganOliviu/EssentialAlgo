@@ -1122,6 +1122,23 @@ var expected = new [,] {{2, 4, 6}, {8, 10, 12}, {0, 16, 18}};
 Assert.AreEqual(_matricesWorkflow.BoostUpMatrix(_matrix, 2).GetMatrix(), expected);
 ```
 
+### BoostDownMatrix
+```
+IAbstractMatrix BoostDownMatrix(IAbstractMatrix matrix, int booster);
+```
+
+Function Description through tests
+
+```
+_matrix.SetLineOfMatrix(3);
+_matrix.SetColumnOfMatrix(3);
+_matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {27, 8, 9}});
+
+var expected = new [,] {{0, 0, 1}, {1, 1, 2}, {9, 2, 3}};
+
+Assert.AreEqual(_matricesWorkflow.BoostDownMatrix(_matrix, 3).GetMatrix(), expected);
+```
+
 ## IOConsole
 
 ```
