@@ -1105,6 +1105,23 @@ _matrix.SetMatrix(new [,]{{4, 3}, {2, 1}});
 Assert.IsTrue(_matricesWorkflow.GetMatrixElementsDivision(_matrix) == 0);
 ```
 
+### BoostUpMatrix
+```
+IAbstractMatrix BoostUpMatrix(IAbstractMatrix matrix, int booster);
+```
+
+Function Description through tests
+
+```
+_matrix.SetLineOfMatrix(3);
+_matrix.SetColumnOfMatrix(3);
+_matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {0, 8, 9}});
+
+var expected = new [,] {{2, 4, 6}, {8, 10, 12}, {0, 16, 18}};
+
+Assert.AreEqual(_matricesWorkflow.BoostUpMatrix(_matrix, 2).GetMatrix(), expected);
+```
+
 ## IOConsole
 
 ```
