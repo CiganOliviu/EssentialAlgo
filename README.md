@@ -855,3 +855,38 @@ var expected = new int[] {1, 2, 3, 4, 5, 6, 7};
 
 Assert.AreEqual(_oneDimensionalArray.GetOneDimensionalArray(), expected);
 ```
+
+## SpecialOneDimensionalArrayAlgorithms
+
+```
+namespace ESharp.ESharpSourceCode.SpecialOneDimensionalArrayAlgorithms
+{
+    public interface IAbstractSpecialOneDimensionalArrayAlgorithms
+    {
+        void BubbleSort(IAbstractOneDimensionalArrayObject array);
+        void MinimumValueSort(IAbstractOneDimensionalArrayObject array);
+        void InsertionSort(IAbstractOneDimensionalArrayObject array);
+        void SelectionSort(IAbstractOneDimensionalArrayObject array);
+        void ShellSort(IAbstractOneDimensionalArrayObject array);
+
+        bool LinearSearchValue(IAbstractOneDimensionalArrayObject array, int valueToSearch);
+        bool BinarySearchValue(IAbstractOneDimensionalArrayObject array, int valueToSearch);
+    }
+}
+```
+
+### BubbleSort
+```
+void BubbleSort(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_array.SetOneDimensionalArray(new [] {7, 6, -5, 4, -3, 2, 1});
+_specialOneDimensionalArrayAlgorithms.BubbleSort(_array);
+
+var expected = new int[] {-5, -3, 1, 2, 4, 6, 7};
+
+Assert.AreEqual(_array.GetOneDimensionalArray(), expected);
+```
