@@ -840,3 +840,18 @@ arrayTwo.SetOneDimensionalArray(new []{-1, 2, -3, 4, -5});
 
 Assert.IsTrue(_oneDimensionalArraysWorkflow.AreArraysEqual(arrayOne, arrayTwo));
 ```
+
+### Are Arrays Equal
+```
+void SortArray(IAbstractOneDimensionalArrayObject array);
+```
+
+Function Description through tests
+
+```
+_oneDimensionalArray.SetOneDimensionalArray(new [] {7, 6, 5, 4, 3, 2, 1});
+_oneDimensionalArraysWorkflow.SortArray(_oneDimensionalArray);
+var expected = new int[] {1, 2, 3, 4, 5, 6, 7};
+
+Assert.AreEqual(_oneDimensionalArray.GetOneDimensionalArray(), expected);
+```
