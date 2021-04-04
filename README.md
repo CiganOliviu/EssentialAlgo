@@ -1075,6 +1075,36 @@ _matrix.SetMatrix(new [,]{{1, 2, 3}, {4, 5, 6}, {0, 8, 9}});
 Assert.IsTrue(_matricesWorkflow.GetMatrixElementsProduct(_matrix) == 0);
 ```
 
+### GetMatrixElementsDifference
+```
+int GetMatrixElementsDifference(IAbstractMatrix matrix);
+```
+
+Function Description through tests
+
+```
+_matrix.SetLineOfMatrix(3);
+_matrix.SetColumnOfMatrix(3);
+_matrix.SetMatrix(new [,]{{-1, -2, -3}, {-4, -5, -6}, {-7, -8, -9}});
+
+Assert.IsTrue(_matricesWorkflow.GetMatrixElementsDifference(_matrix) == 45);
+```
+
+### GetMatrixElementsDivision
+```
+int GetMatrixElementsDivision(IAbstractMatrix matrix);
+```
+
+Function Description through tests
+
+```
+_matrix.SetLineOfMatrix(2);
+_matrix.SetColumnOfMatrix(2);
+_matrix.SetMatrix(new [,]{{4, 3}, {2, 1}});
+
+Assert.IsTrue(_matricesWorkflow.GetMatrixElementsDivision(_matrix) == 0);
+```
+
 ## IOConsole
 
 ```
