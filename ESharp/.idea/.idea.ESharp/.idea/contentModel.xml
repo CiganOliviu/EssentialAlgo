@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_ESharp.-88938217.00" t="ExcludeRecursive" />
-    <e p="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1" t="Include">
+    <e p="C:\Users\cigan\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1" t="Include">
       <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
     </e>
-    <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.16.1/build/netcoreapp2.1/NUnit3.TestAdapter.dll" t="Include" />
-    <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.16.1/build/netcoreapp2.1/NUnit3.TestAdapter.pdb" t="Include" />
-    <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.16.1/build/netcoreapp2.1/nunit.engine.api.dll" t="Include" />
-    <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.16.1/build/netcoreapp2.1/nunit.engine.dll" t="Include" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\cigan\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\cigan\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\cigan\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.api.dll" t="Include" />
+    <e p="C:\Users\cigan\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.dll" t="Include" />
+    <e p="C:\Users\cigan\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\cigan\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="C:\Users\cigan\AppData\local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\cigan\AppData\local\JetBrains\Rider2020.3\resharper-host\local\Transient\Rider\v203\SolutionCaches\_ESharp.-561623781.00" t="ExcludeRecursive" />
+    <e p="D:\ciganenterprise_git\EssentialAlgo\ESharp" t="IncludeFlat">
       <e p="ESharp" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
         <e p="DataStructures" t="Include">
+          <e p="Graph" t="Include">
+            <e p="Graph.cs" t="Include" />
+            <e p="GraphFactoryObject.cs" t="Include" />
+            <e p="IAbstractGraph.cs" t="Include" />
+          </e>
           <e p="Matrix" t="Include">
             <e p="IAbstractMatrix.cs" t="Include" />
             <e p="MatrixFactoryObject.cs" t="Include" />
@@ -23,6 +31,11 @@
             <e p="OneDimensionalArrayFactoryObject.cs" t="Include" />
             <e p="OneDimensionalArrayObject.cs" t="Include" />
           </e>
+          <e p="Tree" t="Include">
+            <e p="IAbstractTree.cs" t="Include" />
+            <e p="Tree.cs" t="Include" />
+            <e p="TreeFactoryObject.cs" t="Include" />
+          </e>
         </e>
         <e p="ESharp.csproj" t="IncludeRecursive" />
         <e p="ESharpSourceCode" t="Include">
@@ -31,9 +44,37 @@
             <e p="FundamentalAlgorithmsFactoryObject.cs" t="Include" />
             <e p="IAbstractFundamentalAlgorithms.cs" t="Include" />
           </e>
+          <e p="IOConsole" t="Include">
+            <e p="IAbstractIOConsole.cs" t="Include" />
+            <e p="IoConsole.cs" t="Include" />
+            <e p="IoConsoleFactoryObject.cs" t="Include" />
+          </e>
+          <e p="MatricesWorkflow" t="Include">
+            <e p="IAbstractMatricesWorkflow.cs" t="Include" />
+            <e p="MatricesWorkflow.cs" t="Include" />
+            <e p="MatricesWorkflowFactoryObject.cs" t="Include" />
+          </e>
+          <e p="NumbersAlgorithms" t="Include">
+            <e p="IAbstractNumbersAlgorithms.cs" t="Include" />
+            <e p="NumbersAlgorithms.cs" t="Include" />
+            <e p="NumbersAlgorithmsFactoryObject.cs" t="Include" />
+          </e>
+          <e p="NumbersPropertiesVerifier" t="Include">
+            <e p="IAbstractNumbersPropertiesVerifier.cs" t="Include" />
+            <e p="NumbersPropertiesVerifier.cs" t="Include" />
+            <e p="NumbersPropertiesVerifierFactoryObject.cs" t="Include" />
+          </e>
+          <e p="OneDimensionalArraysWorkflow" t="Include">
+            <e p="IAbstractOneDimensionalArraysWorkflow.cs" t="Include" />
+            <e p="OneDimensionalArraysWorkflow.cs" t="Include" />
+            <e p="OneDimensionalArraysWorkflowFactoryObject.cs" t="Include" />
+          </e>
+          <e p="SpecialOneDimensionalArrayAlgorithms" t="Include">
+            <e p="IAbstractSpecialOneDimensionalArrayAlgorithms.cs" t="Include" />
+            <e p="SpecialOneDimensionalArrayAlgorithms.cs" t="Include" />
+            <e p="SpecialOneDimensionalArrayAlgorithmsFactoryObject.cs" t="Include" />
+          </e>
         </e>
-        <e p="Program.cs" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -41,15 +82,18 @@
             </e>
           </e>
         </e>
+        <e p="Program.cs" t="Include" />
       </e>
       <e p="ESharp.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
-    <e p="$PROJECT_DIR$/../TestESharp" t="IncludeRecursive">
+    <e p="D:\ciganenterprise_git\EssentialAlgo\TestESharp" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
       <e p="DataStructuresTests.cs" t="Include" />
       <e p="FundamentalAlgorithmsTests.cs" t="Include" />
-      <e p="TestESharp.csproj" t="IncludeRecursive" />
-      <e p="bin" t="ExcludeRecursive" />
+      <e p="MatricesWorkflowTests.cs" t="Include" />
+      <e p="NumbersAlgorithmsTests.cs" t="Include" />
+      <e p="NumbersPropertiesVerifierTests.cs" t="Include" />
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
           <e p="netcoreapp3.1" t="Include">
@@ -57,6 +101,9 @@
           </e>
         </e>
       </e>
+      <e p="OneDimensionalArraysWorkflowTests.cs" t="Include" />
+      <e p="SpecialOneDimensionalArrayAlgorithmsTests.cs" t="Include" />
+      <e p="TestESharp.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
